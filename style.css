@@ -2621,7 +2621,9 @@ main.realestate-page{
   .retainer-hero{
 
     position: relative;
-    height: 370px;
+    height: auto;
+    min-height: 260px;
+  
   background: url(images/finance_countinu.jpg)center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -2710,15 +2712,19 @@ main.realestate-page{
   
   /* רספונסיבי */
   @media (max-width: 900px) {
-    .services-grid {
+    .retainer-page .services-grid {
       grid-template-columns: 1fr;
     }
   
-    .service-card {
+   .retainer-page .service-card {
       max-width: 100%;
     }
   }
-  
+  @media (max-width: 420px){
+    .retainer-hero{
+      padding: 52px 0 28px;
+      min-height: 230px;
+    }
   
   
   
