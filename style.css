@@ -394,9 +394,10 @@
       margin: 0;
       grid-template-columns: 1fr 96px;
     }
-  
+  .fit-text{text-align: center;}
     .fit-card{ min-height: 140px; }
-    .fit-img{ width: 96px; height: 70px; }
+    .fit-img{ width: 96px; height: 70px; 
+    align-items: center;}
   }
   @media (max-width: 900px){
     .fit-section .container{
@@ -726,11 +727,30 @@
     .menu-btn{ display:inline-block; }
     .header-inner{ grid-template-columns: 1fr auto auto; }
   }
+  @media (max-width: 900px){
+
+    .hero-image{
+      position: relative;        /* ❗ מבטלים absolute */
+      right: auto;
+      bottom: auto;
+  
+      height: auto;
+      width: 72%;                /* ⬅️ שליטה בגודל */
+      max-width: 280px;
+  
+      margin: 20px auto 0;       /* ממורכז מתחת לטקסט */
+      display: block;
+  
+      padding: 0;
+      animation: none;           /* אופציונלי – פחות רעש בנייד */
+      opacity: .9;
+    }
+  }
+  
   
   @media (max-width: 900px){
     .hero-inner{ flex-direction: column; }
-    .hero-image, .hero-text{ width: 100%; }
-    .hero-image img{ width: 100%; max-width: none; height: auto; }
+     .hero-text{ width: 100%; }
     h1{ font-size:30px; }
   
     .grid-3{ grid-template-columns: 1fr; }
@@ -1239,7 +1259,12 @@ body.contact-page{
       padding-right: 0;
       text-align: center;
     }
-  
+    .about-page .about-hero-title{
+      text-align: center;
+    }
+    .about-page .about-hero-lead{
+      text-align: center;
+    }
     .about-page .about-hero-actions{
       justify-content: center;
     }
@@ -2100,14 +2125,7 @@ body.service-consulting{
       line-height: 1.4;
     }
   
-    /* התמונה בצד ימין: במובייל עדיף לבטל absolute */
-    .hero-image{
-      position: static;
-      height: auto;
-      padding: 0;
-      width: 92%;
-      margin-top: 8px;
-    }
+    
   
     /* SERVICES */
     .services-preview{
@@ -2720,6 +2738,7 @@ main.realestate-page{
       padding: 52px 0 28px;
       min-height: 230px;
     }
+  }
   
   
   
