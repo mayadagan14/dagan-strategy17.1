@@ -1064,6 +1064,10 @@ body.contact-page{
     body.contact-page .two{
       grid-template-columns: 1fr;
     }
+    .age-options{
+      grid-template-columns: repeat(3, 2fr);
+    
+    }
   }
   
  
