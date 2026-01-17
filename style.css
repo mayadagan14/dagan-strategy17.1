@@ -1626,10 +1626,10 @@ body.service-consulting{
       margin: 18px auto 0;
     }
     .persona{
-      text-align: right; /* אם בא לך שזה יישאר “עבריתית” */
+      text-align: center; /* אם בא לך שזה יישאר “עבריתית” */
     }
     .persona-ico{
-      margin: 0 0 10px auto; /* עיגול מימין */
+       align-items: center;
     }
   }
   
@@ -2843,3 +2843,4 @@ main.realestate-page{
 
 
   
+
