@@ -395,7 +395,8 @@
       grid-template-columns: 1fr 96px;
     }
   .fit-text{text-align: center;}
-    .fit-card{ min-height: 140px; }
+  .fit-solution{text-align: center;}
+    .fit-card{ min-height: 140px; align-items: center;}
     .fit-img{ width: 96px; height: 70px; 
     align-items: center;}
   }
