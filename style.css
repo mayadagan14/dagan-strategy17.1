@@ -1065,13 +1065,24 @@ body.contact-page{
     body.contact-page .two{
       grid-template-columns: 1fr;
     }
-    .age-options{
-      grid-template-columns: repeat(3, 2fr);
     
-    }
   }
   
- 
+ @media (max-width: 768px){
+
+  .age-options{
+    gap: 10px;
+  }
+
+  .age-options label{
+    flex: 1 1 calc(50% - 10px); /* 2 בשורה */
+    justify-content: center;
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+}
+
 
 
 /* ===============================
@@ -2874,3 +2885,4 @@ main.realestate-page{
 
 
   
+
