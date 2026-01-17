@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>דגן אסטרטגיה | תכנון פיננסי למשפחות</title>
+
+  <!-- Font (יוקרתי ונקי) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= Header ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    
+    <nav class="nav" aria-label="תפריט ראשי">
+        <a class="nav-link" href="index.html">דף הבית</a>
+        <a class="nav-link active" href="about.html">אודות</a>
+        
+        
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+            שירותים <span class="nav-caret">▾</span>
+          </button>
+          <div class="dropdown" role="menu" aria-label="שירותים">
+              <a href="services-financial-360.html">תכנון פיננסי 360</a>
+              <a href="services-consulting.html">ייעוץ פיננסי</a>
+              <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
+              <a href="services-retainer.html">ליווי מתמשך</a>
+            </div>
+            
+        </div>
+        
+  
+        <a class="nav-link" href="blog.html">בלוג</a>
+        <a class="nav-link" href="faq.html">שאלות ותשובות</a>
+        <a class="nav-link" href="contact.html">צור קשר</a>
+      </nav>
+
+    <a class="logo-center" href="index.html" aria-label="דף הבית - דגן אסטרטגיה">
+      <img class="logo-img" src="images/logo.jpg" alt="דגן אסטרטגיה">
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="index.html">דף הבית</a>
+    <a href="blog.html">בלוג</a>
+    <a href="contact.html">צור קשר</a>
+    <a href="faq.html">שאלות ותשובות</a>
+   <!-- שירותים (Dropdown בנייד) -->
+<button class="mnav-acc" type="button" id="mobileServicesBtn" aria-expanded="false">
+    שירותים <span class="mnav-caret">▾</span>
+  </button>
+  
+  <div class="mnav-sub" id="mobileServicesSub" hidden>
+    <a href="services-financial-360.html">תכנון פיננסי 360</a>
+    <a href="services-consulting.html">ייעוץ פיננסי</a>
+    <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
+    <a href="services-retainer.html">ליווי מתמשך</a>
+  </div>
+  
+    <a href="about.html">אודות</a>
+  </div>
+  
+</header>
+
+<main class="about-page">
+
+    <section class="about-hero">
+        <div class="about-hero-bg" aria-hidden="true"></div>
+        <div class="about-hero-overlay" aria-hidden="true"></div>
+    
+            <div class="container about-hero-inner">
+                <!-- טקסט בלבד בתוך הקונטיינר -->
+                <div class="about-hero-copy reveal from-bottom">
+                  <h1 class="about-hero-title">בואו להכיר</h1>
+              
+                  <p class="about-hero-lead">
+                    שמי יואב דגן, בעלים ומנכ״ל <strong>DAGAN STRATEGY</strong> – משרד לתכנון פיננסי הוליסטי (360) להשגת מטרות חיים.
+                  </p>
+                  <ul class="about-hero-bullets" aria-label="נקודות עליי">
+                    <li>נשוי +3, מתגורר בתל־מונד</li>
+                    <li>בעל תואר שני במנהל עסקים ובמשפטים</li>
+                    <li>מתכנן פיננסי מוסמך (CFP), בהסמכה בינלאומית, חבר בלשכת המתכננים הפיננסיים (FPAI)</li>
+                    <li>בעבר מנכ״ל חברת סטארט־אפ בעולמות הפודטק, סמנכ״ל אסטרטגיה ופיתוח עסקי בחברת קוקה־קולה ועוד</li>
+                    <li>מנטור למנהלים ומלווה סטארט־אפים בדרכם היזמית</li>
+                  </ul>
+              
+                  <div class="about-hero-actions">
+                    <a class="btn primary pill" href="contact.html">דברו איתי</a>
+                    <a class="btn ghost pill" href="services.html">לשירותים</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- ✅ התמונה מחוץ לקונטיינר כדי ש-bottom יתייחס לכל ה-hero -->
+              <div class="about-hero-photo">
+                <img src="images/aboutpic.png" alt="יואב דגן">
+              </div>
+              
+    
+
+      </section>
+    
+  <section class="section">
+    <div class="container">
+
+      <!-- פתיח עם תמונה -->
+      <div class="card reveal from-bottom" style="margin-top:16px;">
+       
+
+        <h2 class="about-title">
+            מאסטרטגיה עסקית – לאסטרטגיה משפחתית
+          </h2>
+        
+          <h3 class="about-subtitle">
+            איך ניסיון של עשרות שנים בבניית אסטרטגיות
+            הפך לגישה אחרת לתכנון פיננסי אישי ומשפחתי
+          </h3>
+    
+        <p>
+          לאורך שלושה עשורים כמנכ״ל, סמנכ״ל אסטרטגיה ויועץ בכיר, למדתי דבר אחד פשוט וברור:
+          <strong>תוכנית טובה משנה מציאות.</strong>
+        </p>
+
+        <p>
+          בעולם העסקי זה מובן מאליו: אין הצלחה בלי יעדים ברורים, תוכנית עבודה ותהליכי בקרה.
+          כמי שהוביל תהליכי אסטרטגיה חוצי־ארגון, למדתי שהמיומנויות הקריטיות להצלחה הן
+          ראיית 360 של הסביבה, רתימה של אנשים, ויכולת הוצאה לפועל בסביבה של אי־ודאות.
+        </p>
+
+        <p>
+          אבל כשזה מגיע לחיים האישיים והמשפחתיים, רוב האנשים לא רואים תמונת 360 מלאה של כלל הנכסים שלהם,
+          לא עוצרים להגדיר תמונת הצלחה לעוד 10 או 20 שנה קדימה, ובוודאי שלא חושבים במונחים של מטרות חיים.
+        </p>
+
+        <p>
+          לכולנו יש מטרות חיים, אבל לרוב לא ישבנו לאפיין אותן, לתעדף, ולהצמיד להן לוחות זמנים ומדדים.
+          וכאן בדיוק מתחיל תהליך התכנון הפיננסי:
+          <strong>בתכנון פיננסי לא מתחילים בכסף – אלא במטרות החיים.</strong>
+        </p>
+      </div>
+
+      <!-- מי אני ומה אני מביא -->
+      <div class="card reveal from-bottom" style="margin-top:16px;">
+        
+        <h2 class="about-title">מי אני ומה אני מביא איתי</h2>
+        
+          <h3 class="about-subtitle">
+           הניסיון העסקי שלי – בשירות ההחלטות האישיות שלכם
+          </h3>
+        <p>
+            במשך שנים קיבלתי החלטות אסטרטגיות בסביבות מורכבות,עם רמות גבוהות של אי־ודאות, ריבוי אינטרסים והשלכות ארוכות טווח. דווקא שם למדתי שהחלטות טובות לא נולדות מאינטואיציה או פתרון נקודתי,
+            אלא מעבודת מטה עמוקה וראייה רחבה שמבינה את התמונה כולה:
+            מטרות, צרכים, אילוצים והקשרים ומאפשרת גמישות ויכולת התאמה גם כשהמציאות משתנה. היום אני מביא את אותה צורת חשיבה
+            לעולם הפיננסי האישי והמשפחתי,
+            כדי לעזור לאנשים לקבל החלטות רגועות, שקולות שמחוברות למה שחשוב להם באמת בחיים.
+        </p>
+
+      </div>
+
+      <!-- למה הקמתי -->
+      <div class="card reveal from-bottom" style="margin-top:16px;">
+        <h2 class="about-title" >איך אני עובד ולמה הקמתי את DAGAN STRATEGY</h2>
+        <h3 class="about-subtitle">
+            הגישה שמובילה את העבודה
+           </h3>
+        <p>אני מלווה את לקוחותיי בתהליך תכנון פיננסי מובנה, שמתחיל בהבנה עמוקה של המצב הקיים, הגדרת המטרות והשאיפות קדימה ומסתיים באסטרטגיה פיננסית ברורה ותוכנית עבודה ליישום.
+        נקודת המוצא שלי פשוטה:
+        בתכנון פיננסי נכון אין החלטות מבודדות — יש 
+        <strong>   מערכת אחת של בחירות </strong>
+        
+        שמתחברות לחיים עצמם.
+        </p>
+        <h3 class="about-subtitle">
+            החלטות מחוברות למטרות, לא למוצרים
+           </h3>
+
+            <p>בעבודה המשותפת איני בוחן השקעות, הלוואות או מהלכים פיננסיים כפריטים בודדים בפני עצמם, אלא כחלק ממכלול רחב שמאזן בין סיכונים, הזדמנויות וטווחי זמן שונים.
+           כל החלטה פיננסית מחוברת למטרה שהיא משרתת : פרישה, מגורים, חופשה, משפחה, לימודים, שינוי קריירה או איכות חיים משודרגת.
+           
+           ,המטרה היא לבנות תמהיל
+            <strong> 
+             מפוזר, יציב וגמיש
+            </strong>
+            שמחבר בין ההווה הכלכלי לבין העתיד שאתם רוצים לבנות.
+            </p>
+            <h3 class="about-subtitle">
+                תהליך עבודה שמייצר בהירות
+            </h3>
+ 
+             <p>לאחר הגדרת המטרות והבנת התמונה המלאה, נבנית אסטרטגיה פיננסית כוללת:
+                כזו שמאפשרת לקבל החלטות רגועות, גם בסביבה משתנה ולא ודאית.
+                לעיתים ניתן לקדם כמה מטרות במקביל ולעיתים נדרשת בחירה , תיעדוף או שינוי היעד.
+                </p>
+             <h3 class="about-subtitle">
+                עבודה משותפת ובניית שפה פיננסית
+             </h3>
+  
+              <p>בעבודה עם בני זוג אני שם דגש מיוחד על בניית שפה פיננסית משותפת:
+                הגדרת מטרות לטווח קצר וארוך,
+                העמקה בדילמות, באמונות ובבחירות סביב כסף והשקעות,
+                ויצירת בסיס שמאפשר קבלת החלטות משותפת לאורך זמן.
+                המטרה היא שההחלטות שיתקבלו יהיו
+                לא רק נכונות כלכלית — אלא גם נכונות לכם.
+                </p>
+              <h3 class="about-subtitle">
+                משלב התכנון ליישום בפועל
+              </h3>
+   
+               <p>כאשר נדרש ליווי מקצועי נוסף, אני מסייע בחיבור לאנשי המקצוע הרלוונטיים כגון סוכני ביטוח, יועצי משכנתאות, עו"ד, מומחי מס ועוד.
+                הליווי נעשה תוך שמירה מלאה על 
+                <strong> עצמאות ואובייקטיביות</strong>
+                וללא תלות בגורם כזה או אחר, כך שהאסטרטגיה מותאמת לכם ללא כל שיקולים זרים. 
+                </p>
+             
+    
+
+      </div>
+
+  
+      <!-- כפתור מעבר לצור קשר (אופציונלי, נראה מעולה) -->
+      <div class="final-cta reveal from-bottom" style="margin-top:16px;">
+        
+        <h1 class="lead">אם אתם רוצים להבין האם ואיך תכנון פיננסי 360 יכול להתאים לכם —
+            אתם מוזמנים להשאיר פרטים ואחזור אליכם לשיחה ראשונית.</h1>
+
+        <a class="btn primary pill" href="contact.html">דברו איתי</a>
+      </div>
+
+
+
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-inner">
+  
+      <div class="footer-left">
+        <strong>דגן אסטרטגיה</strong>
+        <div class="muted">תכנון פיננסי הוליסטי למשפחות</div>
+      </div>
+  
+      <!-- לוגו באמצע -->
+      <div class="footer-logo">
+        <img src="images/logo.jpg" alt="Dagan Strategy">
+      </div>
+  
+      <div class="footer-links">
+        <a href="about.html">אודות</a>
+        <a href="services.html">שירותים</a>
+        <a href="contact.html">צור קשר</a>
+      </div>
+  
+    </div>
+  </footer>
+  <div class="footer-extra">
+    <div class="container footer-extra-inner">
+  
+        <a href="https://wa.me/972549002792" target="_blank" rel="noopener" class="footer-link">
+            <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
+              <path fill="currentColor"
+                d="M19.11 17.36c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.21-.59.07-.27-.14-1.14-.42-2.17-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.99 2.65 1.13 2.84.14.18 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.6-.66 1.83-1.3.23-.64.23-1.18.16-1.3-.07-.11-.25-.18-.52-.32zM16.01 3C9.38 3 4 8.08 4 14.34c0 2.53.88 4.85 2.36 6.72L5 29l8.12-1.27c1.2.33 2.47.51 3.89.51 6.63 0 12.01-5.08 12.01-11.34C28.02 8.08 22.64 3 16.01 3zm0 22.02c-1.29 0-2.55-.18-3.74-.53l-.27-.08-4.82.75.79-4.55-.18-.28c-1.34-1.84-2.05-4-2.05-6.23 0-5.93 5.16-10.77 11.27-10.77 6.11 0 11.27 4.83 11.27 10.77 0 5.93-5.16 10.76-11.27 10.76z"/>
+            </svg>
+            WhatsApp
+          </a>
+          
+  
+      <a href="mailto:dagansfp@gmail.com" class="footer-link">
+        ✉️ אימייל
+      </a>
+  
+      <a href="privacy.html" class="footer-link">
+        🔐 מדיניות פרטיות
+      </a>
+  
+      <span class="footer-sep">|</span>
+  
+      <a href="compound-interest.html" class="footer-link">
+        📈 מחשבון ריבית דריבית
+      </a>
+  
+      <a href="mortgage.html" class="footer-link">
+        🏠 מחשבון משכנתא / לוח שפיצר
+      </a>
+  
+      <a href="tax-calculator.html" class="footer-link">
+        🧾 מחשבון מס הכנסה
+      </a>
+  
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
