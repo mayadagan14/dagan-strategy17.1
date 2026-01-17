@@ -2712,13 +2712,8 @@ main.realestate-page{
   
   /* רספונסיבי */
   @media (max-width: 900px) {
-    .retainer-page .services-grid {
-      grid-template-columns: 1fr;
-    }
-  
-   .retainer-page .service-card {
-      max-width: 100%;
-    }
+    .retainer-page .grid-2{ grid-template-columns: 1fr; }
+    
   }
   @media (max-width: 420px){
     .retainer-hero{
