@@ -402,10 +402,8 @@
     }
   
     .fit-card{
-      width: 100%;
-      text-align: center;
-      min-height: unset;
-      height: auto;
+      min-height: unset !important;
+      height: auto !important;
     }
   
     .fit-solution{
