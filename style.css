@@ -387,42 +387,35 @@
     .fit-grid{
       grid-template-columns: 1fr;
       gap: 16px;
-      justify-items: center; /* מרכז את הכרטיסים */
+      justify-items: center;
     }
   
-  }
-  
-  @media (max-width: 768px){
-
-    /* תמונה – רספונסיבית וממורכזת */
-    .fit-img{
-      width: min(180px, 65vw); /* גודל יפה בנייד */
-      height: auto;           /* לא לכפות גובה */
-      display: block;
-      margin: 0 auto 12px;
-    }
-  
-    /* פריט */
     .fit-item{
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      align-self: stretch;
     }
   
-    /* כרטיס */
+    .fit-img{
+      width: min(180px, 65vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 12px;
+    }
+  
     .fit-card{
-      text-align: center;
       width: 100%;
-    }
-  
-    .fit-text{
       text-align: center;
+      min-height: unset;
+      height: auto;
     }
   
     .fit-solution{
       display: inline-block;
       margin-top: 8px;
+      text-align: center; /* במקום right בנייד */
     }
   }
   
