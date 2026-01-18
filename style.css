@@ -729,15 +729,9 @@
     .hero-image{
       position: relative;        /* ❗ מבטלים absolute */
       right: auto;
-      bottom: auto;
-  
       height: auto;
       width: 72%;                /* ⬅️ שליטה בגודל */
-      max-width: 280px;
-  
       margin: 20px auto 0;       /* ממורכז מתחת לטקסט */
-      display: block;
-  
       padding: 0;
       animation: none;           /* אופציונלי – פחות רעש בנייד */
       opacity: .9;
