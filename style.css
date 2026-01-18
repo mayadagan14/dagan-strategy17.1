@@ -734,27 +734,46 @@
     .header-inner{ grid-template-columns: 1fr auto auto; }
   }
   @media (max-width: 900px){
-
-    .hero-image{
-      position: relative;        /* ❗ מבטלים absolute */
-      right: auto;
-      height: auto;
-      width: 72%;                /* ⬅️ שליטה בגודל */
-      margin: 20px auto 0;       /* ממורכז מתחת לטקסט */
-      padding: 0;
-      animation: none;           /* אופציונלי – פחות רעש בנייד */
-      opacity: .9;
+    .hero-image,
+    .hero-image img{
+      position: static !important;
+      right: auto !important;
+      left: auto !important;
+      bottom: auto !important;
+      transform: none !important;
     }
   }
   
   
   @media (max-width: 900px){
-    .hero-inner{ flex-direction: column; }
-     .hero-text{ width: 100%; }
+    .hero-inner{
+      display: flex;            /* אם כבר flex — זה ידרוס רק בנייד */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 18px;
+      padding: 22px 16px;
+    }
+    .hero-text{
+      text-align: center;
+      max-width: 520px;
+    }
+  
     h1{ font-size:30px; }
   
     .grid-3{ grid-template-columns: 1fr; }
     .split{ grid-template-columns: 1fr; }
+    .hero-image{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .hero-image img{
+      width: min(280px, 82vw);  /* גודל טוב לאייפון */
+      height: auto;
+      display: block;
+    }
 
   }
   
