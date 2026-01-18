@@ -413,6 +413,7 @@
     /* כרטיס */
     .fit-card{
       text-align: center;
+      width: 100%;
     }
   
     .fit-text{
