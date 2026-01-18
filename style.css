@@ -380,12 +380,8 @@
     /* מרכז את כל הבלוק של הגריד בתוך העמוד */
     .fit-grid{
       display: grid;
-      grid-template-columns: 1fr !important;
-  
-      width: min(520px, 100%);   /* ⬅️ זה הקטע הקריטי */
-      margin-inline: auto;       /* ⬅️ מרכז */
-      justify-content: center;   /* מרכז את המסילה */
-      justify-items: stretch;    /* שהכרטיס יתמלא בתוך הרוחב המצומצם */
+      grid-template-columns: 1fr !important;  /* מרכז את המסילה */
+         
     }
   
     /* כל item יהיה 100% מהרוחב של fit-grid המצומצם */
@@ -1065,24 +1061,23 @@ body.contact-page{
     body.contact-page .two{
       grid-template-columns: 1fr;
     }
-    
   }
   
- @media (max-width: 768px){
+  @media (max-width: 768px){
 
-  .age-options{
-    gap: 10px;
+    .age-options{
+      gap: 10px;
+    }
+  
+    .age-options label{
+      flex: 1 1 calc(50% - 10px); /* 2 בשורה */
+      justify-content: center;
+      padding: 12px 10px;
+      font-size: 14px;
+    }
+  
   }
-
-  .age-options label{
-    flex: 1 1 calc(50% - 10px); /* 2 בשורה */
-    justify-content: center;
-    padding: 12px 10px;
-    font-size: 14px;
-  }
-
-}
-
+  
 
 
 /* ===============================
@@ -2885,4 +2880,3 @@ main.realestate-page{
 
 
   
-
