@@ -377,11 +377,7 @@
   }
   
   
-  @media (max-width: 900px){
-    .fit-section .container{
-      display: block;
-    }
-  }
+  
   @media (max-width: 768px){
 
     .fit-grid{
