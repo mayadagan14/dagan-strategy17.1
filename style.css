@@ -339,8 +339,12 @@
     border-radius: 18px;
     padding: 16px 18px;
     box-shadow: var(--shadow-sm);
-  }
-  
+    min-height: 200px; 
+      flex-direction: column;
+      justify-content: space-between; /* מפזר תוכן */
+      height: 100%;                   /* ממלא את כל הגובה */
+    } 
+    
   .fit-text{
     margin: 0 0 10px;
     font-size: 15px;
