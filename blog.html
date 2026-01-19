@@ -41,7 +41,7 @@
   
         <a class="nav-link active" href="blog.html">בלוג</a>
         <a class="nav-link" href="faq.html">שאלות ותשובות</a>
-        <a class="nav-link" href="contact.html">צור קשר</a>
+        <a class="nav-link-contact" href="contact.html">צור קשר</a>
       </nav>
 
     <a class="logo-center" href="index.html" aria-label="דף הבית - דגן אסטרטגיה">
@@ -51,12 +51,12 @@
     <button class="menu-btn" id="menuBtn" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
   </div>
 
+  
   <div class="mobile-nav" id="mobileNav" hidden>
     <a href="index.html">דף הבית</a>
-    <a href="blog.html">בלוג</a>
-    <a href="contact.html">צור קשר</a>
-    <a href="faq.html">שאלות ותשובות</a>
-    <!-- שירותים (Dropdown בנייד) -->
+    <a href="about.html">אודות</a>
+   
+   <!-- שירותים (Dropdown בנייד) -->
 <button class="mnav-acc" type="button" id="mobileServicesBtn" aria-expanded="false">
     שירותים <span class="mnav-caret">▾</span>
   </button>
@@ -67,23 +67,49 @@
     <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
     <a href="services-retainer.html">ליווי מתמשך</a>
   </div>
-  
-    <a href="about.html">אודות</a>
+  <a href="blog.html">בלוג</a>
+  <a href="faq.html">שאלות ותשובות</a>
+  <a href="contact.html">צור קשר</a>
   </div>
   
 </header>
 
-<main>
-  <section class="section">
-    <div class="container">
-      <h1>כותרת העמוד</h1>
-      <p class="section-subtitle">כאן יופיע התוכן שלך.</p>
+<main class="blog">
+  <section class="blog-section">
+  <div class="container">
 
-      <div class="card reveal from-bottom">
-        <h3>בלוק תוכן</h3>
-        <p class="lead">אפשר לשים כאן מלל, תמונות, שאלות-תשובות וכו׳.</p>
-      </div>
-    </div>
+    <header class="blog-head">
+      <h1>מאמרים</h1>
+      <p>טיפים ותובנות שיעזרו לקבל החלטות פיננסיות נכונות.</p>
+    </header>
+
+    <section class="blog-grid" aria-label="רשימת מאמרים">
+
+      <!-- מאמר 1 -->
+      <a class="post-card" href="post-1.html">
+        <div class="post-thumb">
+          <img src="images/blog1.jpg" alt="תמונה למאמר 1">
+        </div>
+        <div class="post-body">
+          <h2 class="post-title">מאמר 1</h2>
+          <p class="post-excerpt">מאמאר 1 פירוט</p>
+        </div>
+      </a>
+
+      <!-- מאמר 2 -->
+      <a class="post-card" href="post-blog2.html">
+        <div class="post-thumb">
+          <img src="images/blog2.jpg" alt="תמונה למאמר 2">
+        </div>
+        <div class="post-body">
+          <h2 class="post-title">טעויות נפוצות בניהול כסף – ואיך להימנע מהן</h2>
+          <p class="post-excerpt">מה אנשים עושים “אוטומטית” וזה עולה להם ביוקר.</p>
+        </div>
+      </a>
+
+    </section>
+
+  </div>
   </section>
 </main>
 
