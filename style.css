@@ -236,14 +236,14 @@
       position: relative;
       z-index: 10;
       padding: 0 16px;
-      color: #0f172a;
+      color:black;
     }
   
     /* התמונה מאחור וחופפת */
     .hero-image{
       position: absolute;
       left: 50%;
-      bottom: -50px;                 /* משחקים בזה */
+      bottom: -90px;                 /* משחקים בזה */
       transform: translateX(-50%);
       width: min(360px, 92vw);
       margin: 0;
@@ -256,7 +256,7 @@
       width: 100%;
       height: auto;
       object-fit: contain;
-      opacity: 0.4;
+      opacity: 0.9;
       filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
     }
   }
