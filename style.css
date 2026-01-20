@@ -218,6 +218,43 @@
   height: 110%;
   right: -60px;;
   }
+  @media (max-width: 768px){
+
+    .hero{
+      padding-bottom: 0;
+    }
+  
+    .hero-inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-text{
+      max-width: 100%;
+      padding: 0 16px;
+    }
+  
+    .hero-image{
+      position: relative;      /* 👈 מבטל absolute */
+      right: auto;
+      bottom: auto;
+      height: auto;
+      width: 100%;
+      max-width: 320px;        /* שליטה על הגודל */
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .hero-image img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
  
   h1{
     font-weight: 900;
@@ -721,48 +758,9 @@
     .nav{ display:none; }
     .menu-btn{ display:inline-block; }
     .header-inner{ grid-template-columns: 1fr auto auto; }
-  }
-  @media (max-width: 900px){
-    .hero-image,
-    .hero-image img{
-      position: static !important;
-      right: auto !important;
-      left: auto !important;
-      bottom: auto !important;
-      transform: none !important;
-    }
-  }
-  
-  
-  @media (max-width: 900px){
-    .hero-inner{
-      display: flex;            /* אם כבר flex — זה ידרוס רק בנייד */
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 18px;
-      padding: 22px 16px;
-    }
-    .hero-text{
-      text-align: center;
-      max-width: 520px;
-    }
-  
     h1{ font-size:30px; }
   
     .grid-3{ grid-template-columns: 1fr; }
-    .split{ grid-template-columns: 1fr; }
-    .hero-image{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .hero-image img{
-      width: min(280px, 82vw);  /* גודל טוב לאייפון */
-      height: auto;
-      display: block;
-    }
 
   }
   
@@ -2116,18 +2114,7 @@ body.service-consulting{
     .logo-img{ height: 36px; }
   
     /* HERO */
-    .hero{
-      padding: 18px 0 22px;
-      background-position: center;
-      background-size: cover;
-    }
-  
-    /* במקום שני אלמנטים ש”מתנגשים”, נעבור לפריסה אנכית */
-    .hero-inner{
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-    }
+    
   
     /* הקופסה במרכז וברוחב כמעט מלא */
     .hero-box{
