@@ -224,39 +224,40 @@
       padding-bottom: 0;
     }
   
-  
-    .hero-text{
-      max-width: 100%;
-      padding: 0 16px;
-    }
+    
     .hero-inner{
       position: relative;
-      padding-bottom: 280px; /* מקום לתמונה */
+      padding-bottom: 140px; /* לא חייב גדול כי הטקסט יושב מעל */
       text-align: center;
     }
   
+    /* הטקסט מעל התמונה */
+    .hero-text{
+      position: relative;
+      z-index: 10;
+      padding: 0 16px;
+    }
+  
+    /* התמונה מאחור וחופפת */
     .hero-image{
       position: absolute;
       left: 50%;
-      bottom: -60px;          /* 👈 זה הקסם: יורדת לתוך הלבן */
+      bottom: -70px;                 /* משחקים בזה */
       transform: translateX(-50%);
-      
-      width: 100%;
-      max-width: 360px;
-      height: auto;
-      
+      width: min(360px, 92vw);
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      z-index: 5;
+      z-index: 2;                    /* נמוך מהטקסט */
+      pointer-events: none;          /* שלא תחסום קליקים על כפתור */
     }
   
     .hero-image img{
       width: 100%;
       height: auto;
       object-fit: contain;
-    }}
+      filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
+    }
+  }
   
 
  
