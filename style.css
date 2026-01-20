@@ -256,7 +256,7 @@
       width: 100%;
       height: auto;
       object-fit: contain;
-      opacity: 0.9;
+      opacity: 0.1;
       filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
     }
   }
@@ -3033,3 +3033,4 @@ main.realestate-page{
 
 
   
+
