@@ -224,35 +224,39 @@
       padding-bottom: 0;
     }
   
-    .hero-inner{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
   
     .hero-text{
       max-width: 100%;
       padding: 0 16px;
     }
+    .hero-inner{
+      position: relative;
+      padding-bottom: 280px; /* מקום לתמונה */
+      text-align: center;
+    }
   
     .hero-image{
-      position: relative;      /* 👈 מבטל absolute */
-      right: auto;
-      bottom: auto;
-      height: auto;
+      position: absolute;
+      left: 50%;
+      bottom: -60px;          /* 👈 זה הקסם: יורדת לתוך הלבן */
+      transform: translateX(-50%);
+      
       width: 100%;
-      max-width: 320px;        /* שליטה על הגודל */
-      margin-top: 24px;
+      max-width: 360px;
+      height: auto;
+      
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
+      z-index: 5;
     }
   
     .hero-image img{
       width: 100%;
       height: auto;
-    }
-  }
+      object-fit: contain;
+    }}
   
 
  
