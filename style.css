@@ -96,8 +96,8 @@
     content:"";
     position:absolute;
     right:0;
-    bottom:-8px;
-    height:4px;
+    bottom:1px;
+    height:3px;
     width:0;
     background: linear-gradient(90deg, var(--primary), var(--primary));
     transition: width .25s ease;
@@ -107,8 +107,8 @@
     content:"";
     position:absolute;
     right:0;
-    bottom:-8px;
-    height:4px;
+    bottom:1px;
+    height:3px;
     width:0;
     background: linear-gradient(90deg, var(--primary), var(--primary));
     transition: width .25s ease;
@@ -531,38 +531,26 @@
     line-height: 1.9;
     font-size: 15px;
   }
-  
   .service-icon{
-    width: 84px;
-    height: 60px;
-    margin-top: 10px;
+    width: 56px;
+    height: 56px;
+    margin: 12px auto 12px;
+    border-radius: 14px;
+    background: rgba(56,107,72,0.12); /* ירוק עדין */
+    color: #9e2b08;
+  
+    display: flex;
     align-items: center;
-    position: relative;
-    left: 65%;
-    
+    justify-content: center;
   }
   
-  .service-icon span{
-    position: absolute;
-    inset: 0;
-    border-radius: 22px;
-    transform: rotate(12deg);
-    background: rgba(148,163,184,0.55);
+  @media (max-width: 768px){
+    .service-icon{
+      width: 48px;
+      height: 48px;
+    }
   }
   
-  .service-icon span:last-child{
-    transform: rotate(-14deg) translateX(14px);
-    background: rgba(59,130,246,0.28);
-  }
-  
-  .service-icon.blue span{ background: rgba(37,99,235,0.65); }
-  .service-icon.blue span:last-child{ background: rgba(56,189,248,0.35); }
-  
-  .service-icon.mint span{ background: rgba(45,212,191,0.42); }
-  .service-icon.mint span:last-child{ background: rgba(148,163,184,0.55); }
-  
-  .service-icon.gold span{ background: rgba(15,23,42,0.65); }
-  .service-icon.gold span:last-child{ background: rgba(255,255,255,0.38); }
   
   .service-btn{
     position: absolute;
