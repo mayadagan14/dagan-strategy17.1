@@ -21,15 +21,15 @@
 
     
     <nav class="nav" aria-label="תפריט ראשי">
-        <a class="nav-link" href="index.html">דף הבית</a>
+        <a class="nav-link " href="index.html">דף הבית</a>
         <a class="nav-link" href="about.html">אודות</a>
         
         
-        <div class="nav-dropdown">
+        <div class="nav-dropdown active">
           <button class="nav-link nav-dropbtn active" type="button" aria-haspopup="true" aria-expanded="false">
             שירותים <span class="nav-caret">▾</span>
           </button>
-          <div class="dropdown" role="menu" aria-label="שירותים">
+          <div class="dropdown " role="menu" aria-label="שירותים">
               <a href="services-financial-360.html">תכנון פיננסי 360</a>
               <a href="services-consulting.html">ייעוץ פיננסי</a>
               <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
@@ -106,8 +106,32 @@
       
         <!-- שני מסלולים -->
         <section class="section alt">
+          <div class="branch-arrows" aria-hidden="true">
+            <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+              <!-- קו מרכזי למעלה -> נקודת פיצול -->
+              <path class="stem" d="M300 20 L300 85" />
+          
+              <!-- ענף שמאלה -->
+              <path class="branch left" d="M300 85 C260 95, 210 115, 160 150" />
+              <!-- ענף ימינה -->
+              <path class="branch right" d="M300 85 C340 95, 390 115, 440 150" />
+          
+              <!-- ראשי חץ -->
+              <polygon class="head left"
+              points="135,132 175,150 135,168 "  transform="rotate(25 140 150)" />
+            
+            <polygon class="head right"
+              points="465,132 425,150 465,168" transform="rotate(-25 460 150)" />
+          
+              <!-- נקודת פיצול (עיגול קטן) -->
+              <circle class="dot" cx="300" cy="85" r="6" />
+            </svg>
+          </div>
+          
           <div class="container grid-2">
-      
+
+            
+            
             <div class="service-card">
               <h3 class="service-title">ליווי מתמשך ללקוחות שעברו תכנון פיננסי 360</h3>
               <p class="service-intro">
@@ -116,12 +140,12 @@
               </p>
               <ul class="service-list">
               
-                <li> מעקב שוטף אחר יישום התוכנית</li>
-                <li> Rebalancing של תמהיל ההשקעות</li>
-                <li> התאמות לשינויים אישיים, משפחתיים ותעסוקתיים</li>
-                <li> בחינה תקופתית של החלטות פיננסיות משמעותיות</li>
-                <li>התייחסות לשינויים רגולטוריים וחקיקתיים</li>
-                <li>שמירה על איזון בין מטרות, סיכונים וטווחי זמן</li>
+                <li> ✳️ מעקב שוטף אחר יישום התוכנית </li>
+                <li>  ✳️ Rebalancing של תמהיל ההשקעות</li>
+                <li> ✳️ התאמות לשינויים אישיים, משפחתיים ותעסוקתיים</li>
+                <li> ✳️ בחינה תקופתית של החלטות פיננסיות משמעותיות</li>
+                <li>✳️ התייחסות לשינויים רגולטוריים וחקיקתיים</li>
+                <li>✳️  שמירה על איזון בין מטרות, סיכונים וטווחי זמן</li>
               </ul>
       
               <p>
@@ -139,14 +163,14 @@
               </p>
               <ul class="service-list">
               
-                <li>הבנת תלוש שכר והשלכותיו</li>
-                <li>ניתוח דוחות פנסיה, ביטוח וקרנות</li>
-                <li>קריאה והסבר של דוחות שנתיים</li>
-                <li>חשיבה משותפת על חסכונות, פיקדונות והלוואות</li>
-                <li>ליווי בקבלת החלטות סביב אשראי</li>
-                <li>ייעוץ בנושאי תקציב ומעקב הוצאות</li>
-                <li>התלבטויות סביב נדל״ן — קנייה, מכירה או השכרה</li>
-                <li>הקניית ידע להשקעה עצמאית, לפי רמת הנוחות</li>
+                <li>✳️ הבנת תלוש שכר והשלכותיו</li>
+                <li>✳️ ניתוח דוחות פנסיה, ביטוח וקרנות</li>
+                <li>✳️ קריאה והסבר של דוחות שנתיים</li>
+                <li>✳️ חשיבה משותפת על חסכונות, פיקדונות והלוואות</li>
+                <li>✳️ ליווי בקבלת החלטות סביב אשראי</li>
+                <li>✳️ ייעוץ בנושאי תקציב ומעקב הוצאות</li>
+                <li>✳️ התלבטויות סביב נדל״ן — קנייה, מכירה או השכרה</li>
+                <li>✳️ הקניית ידע להשקעה עצמאית, לפי רמת הנוחות</li>
               </ul>
             </div>
       
@@ -251,4 +275,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
