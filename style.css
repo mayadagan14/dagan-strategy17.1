@@ -2719,6 +2719,9 @@
         padding: 52px 0 28px;
         min-height: 230px;
       }
+      .retainer-page .service-card {
+        height: auto;
+      }
     }
     .retainer-page .section.alt{
       position: relative;  /* כדי שהחץ ימדד מה-section הזה */
@@ -2824,7 +2827,12 @@
   @keyframes cardsIn{
     to{ opacity: 1; transform: translateY(0); }
   }
-
+  @media (max-width: 768px){
+    .retainer-page .branch-arrows{
+      display: none;
+    }
+  }
+  
     
     .qa-title{
       text-align: center;
