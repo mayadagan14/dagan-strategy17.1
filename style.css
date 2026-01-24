@@ -450,8 +450,7 @@
     .services-preview{
       overflow: hidden;
       position: relative;
-  background:
-    linear-gradient(180deg, #2f553c 0%, #d7dcda 0%, #b8cec0 0%);
+ margin-top: 20px;
 
     }
 
@@ -479,15 +478,8 @@
     .services-shell::before{
       content:"";
       position:absolute;
-      
-      top:-2px;
       height:540px;
-      background:
-        radial-gradient(60px 40px at 10% 70%, rgba(255,255,255,0.16), transparent 70%),
-        radial-gradient(90px 55px at 35% 85%, rgba(255,255,255,0.14), transparent 70%),
-        radial-gradient(70px 45px at 60% 75%, rgba(255,255,255,0.14), transparent 70%),
-        radial-gradient(110px 70px at 85% 90%, rgba(255,255,255,0.12), transparent 70%);
-      opacity: 0.25;
+    
     }
     
     /* soft light */
@@ -495,21 +487,9 @@
       content:"";
       position:absolute;
       inset:-2px;
-      background:
-        radial-gradient(800px 260px at 50% 0%, rgba(4, 59, 36, 0.18), transparent 60%),
-        radial-gradient(800px 260px at 10% 30%, rgba(22, 103, 69, 0.12), transparent 60%);
       pointer-events:none;
       opacity: .9;
-    }
-    
-    .services-title{
-      z-index: 2;
-      text-align: center;
-      justify-content: center;
-      font-size: 34px;
-      color: var(--primary);
-      font-weight: 900;
-    margin-top: 80px;
+      
     }
     
     .services-grid{
@@ -632,6 +612,7 @@
       display: flex;
       justify-content: center;
     margin-top: 0;
+    animation: spinSoft 60s ease-in-out infinite;
     
     
     }
@@ -641,7 +622,9 @@
       border-radius: 90%; /* העיגול */
       box-shadow: 0 22px 60px rgba(0,0,0,0.18);
       border: 6px solid rgba(255,255,255,0.6);
+   
     }
+
     /* התאמה למובייל */
   /* התאמה למובייל – הסתרת התמונה */
 
@@ -3073,187 +3056,172 @@
 
 
   /* ===== Post page ===== */
-  .post .container{ max-width: 900px; }
+    .post .container{ max-width: 900px; }
 
-  .back-link{
-    display: inline-block;
-    margin: 18px 0;
-    text-decoration: none;
-    color: var(--primary);
-    font-weight: 800;
-  }
+    .back-link{
+      display: inline-block;
+      margin: 18px 0;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 800;
+    }
 
-  .post-article{
-    background: rgba(255,255,255,0.92);
-    border: 1px solid rgba(15,23,42,0.10);
-    border-radius: 26px;
-    box-shadow: var(--shadow-sm);
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
+    .post-article{
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(15,23,42,0.10);
+      border-radius: 26px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
 
-  .post-hero{
-    padding: 22px 20px 10px;
-  }
-  .post-hero h1{
-    margin: 0 0 10px;
-    font-size: clamp(24px, 3.5vw, 38px);
-    font-weight: 900;
-    color: var(--primary);
-  }
-  .post-meta{
-    margin: 0 0 14px;
-    color: rgba(1, 5, 17, 0.55);
-    font-size: 15px;
-  }
+    .post-hero{
+      padding: 22px 20px 10px;
+    }
+    .post-hero h1{
+      margin: 0 0 10px;
+      font-size: clamp(24px, 3.5vw, 38px);
+      font-weight: 900;
+      color: var(--primary);
+    }
+    .post-meta{
+      margin: 0 0 14px;
+      color: rgba(1, 5, 17, 0.55);
+      font-size: 15px;
+    }
 
-  .post-hero-img img{
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    display: block;
-    border-radius: 18px;
-  }
+    .post-hero-img img{
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      border-radius: 18px;
+    }
 
-  .post-content{
-    padding: 18px 20px 26px;
-  }
-  .post-content p{
-    margin: 0 0 14px;
-    line-height: 1.9;
-    color: rgba(11,18,32,0.82);
-  }
-  .post-content h2{
-    margin: 18px 0 10px;
-    font-size: 20px;
-    font-weight: 900;
-    color: var(--primary2);
-  }
+    .post-content{
+      padding: 18px 20px 26px;
+    }
+    .post-content p{
+      margin: 0 0 14px;
+      line-height: 1.9;
+      color: rgba(11,18,32,0.82);
+    }
+    .post-content h2{
+      margin: 18px 0 10px;
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--primary2);
+    }
 
-  .post-cta{
-    margin-top: 20px;
-    padding: 16px;
-    border-radius: 18px;
-    background: rgba(56,107,72,0.08);
-    text-align: center;
-  }
+    .post-cta{
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(56,107,72,0.08);
+      text-align: center;
+    }
 
-  /* ===== Responsive ===== */
-  @media (max-width: 1024px){
-    .blog-grid{ grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 768px){
-    .blog-grid{ grid-template-columns: 1fr; }
-    .post-card{ grid-template-rows: 200px auto; }
-    .post-body{ text-align: center; }
-    .post-hero-img img{ height: 220px; }
-  }
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px){
+      .blog-grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px){
+      .blog-grid{ grid-template-columns: 1fr; }
+      .post-card{ grid-template-rows: 200px auto; }
+      .post-body{ text-align: center; }
+      .post-hero-img img{ height: 220px; }
+    }
 
 
+      
+    .card-link{
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card-link .card{
+      cursor: pointer;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .card-link:hover .card{
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.12);
+    }
+
+
+
+
+    .post-content ul{
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+    }
+
+    .post-content ul li{
+      display: flex;
+      line-height: 2; 
+      align-items: flex-start;
+      gap: 8px;
+      text-align: right;
+    }
+    .post-content ul li::before{
+      content: "✔";
+      color: #2e7d32;
+      font-weight: 700;
+      margin-left: 8px;
+    }
+  
     
-  .card-link{
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
+    .post-table tr:not(:last-child){
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+      /* ===== HERO כמו הדוגמה (wave + תמונה "נבלעת") ===== */
+    .section.alt{
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      padding: 90px 0 70px;
+    }
 
-  .card-link .card{
-    cursor: pointer;
-    transition: transform .25s ease, box-shadow .25s ease;
-  }
+    /* הגל */
+    .section.alt .alt-wave{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
 
-  .card-link:hover .card{
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(0,0,0,.12);
-  }
+    .section.alt .alt-wave path{
+      fill:#f3f6f4; /* גל בהיר */
+    }
 
+    /* מבנה 2 עמודות */
+    .section.alt .container.split{
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 44px;
+      align-items: center;
+    }
 
+    /* תוכן */
+    .section.alt .split-content{
+      max-width: 680px;
+    }
 
-
-  .post-content ul{
-    list-style: none;
-    padding: 0;
-    margin: 24px 0;
-  }
-
-  .post-content ul li{
-    display: flex;
-    line-height: 2; 
-    align-items: flex-start;
-    gap: 8px;
-    text-align: right;
-  }
-  .post-content ul li::before{
-    content: "✔";
-    color: #2e7d32;
-    font-weight: 700;
-    margin-left: 8px;
-  }
-  .post-table table{
-    width: 100%;
-    border-collapse: collapse;
-    direction: rtl;
-  }
-
-  .post-table th,
-  .post-table td{
-    text-align: right;
-    vertical-align: top;
-    padding: 12px 14px;
-  }
-  .post-table th{
-    font-weight: 800;
-    background: #f4f6f5;
-  }
-
-  .post-table tr:not(:last-child){
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-  }
-    /* ===== HERO כמו הדוגמה (wave + תמונה "נבלעת") ===== */
-  .section.alt{
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    padding: 90px 0 70px;
-  }
-
-  /* הגל */
-  .section.alt .alt-wave{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .section.alt .alt-wave path{
-    fill:#f3f6f4; /* גל בהיר */
-  }
-
-  /* מבנה 2 עמודות */
-  .section.alt .container.split{
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 44px;
-    align-items: center;
-  }
-
-  /* תוכן */
-  .section.alt .split-content{
-    max-width: 680px;
-  }
-
-  /* הכותרת – כמו בדוגמה: גדולה, נקייה */
-  .section.alt .section-title{
-    margin: 0 0 16px;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 1.1;
-    color: var(--primary);
-  }
+    /* הכותרת – כמו בדוגמה: גדולה, נקייה */
+    .section.alt .section-title{
+      margin: 0 0 16px;
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 1.1;
+      color: var(--primary);
+    }
 
 
 
@@ -3285,3 +3253,36 @@
       mask-image: radial-gradient(130% 95% at 50% 40%, #000 60%, transparent 78%);
     }
   }
+  .post-table{
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 18px 0;
+    border-radius: 16px;
+    border: 1px solid rgba(15,23,42,0.08);
+    background: #fff;
+  }
+  
+  /* חשוב: שלא "ידחס" עמודות ויעשה טקסט לא קריא */
+  .post-table table{
+    width: 100%;
+    border-collapse: collapse;
+    direction: rtl;
+    min-width: 720px; /* תעלי/תורידי לפי כמות עמודות */
+  }
+  
+  /* שורות יפות + ריווח */
+  .post-table th,
+  .post-table td{
+    padding: 12px 14px;
+    text-align: right;
+    vertical-align: top;
+    white-space: normal;
+  }
+  
+  /* במובייל: קצת הקטנה */
+  @media (max-width: 768px){
+    .post-table table{ min-width: 680px; }
+    .post-table th, .post-table td{ font-size: 14px; }
+  }
+  
