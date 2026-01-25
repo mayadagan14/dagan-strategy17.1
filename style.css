@@ -237,8 +237,7 @@
       /* הטקסט מעל התמונה */
       .hero-text{
         position: relative;
-        z-index: 10;
-       padding-bottom: 140px; 
+        z-index: 10; 
         color:black;
       }
     
@@ -3309,6 +3308,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
