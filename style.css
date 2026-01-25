@@ -2072,7 +2072,7 @@
       width: 25px;
       height: 25px;
       margin-left: 6px;
-      color: var(--primary); /* ירוק וואטסאפ */
+      color: var(--primary2); /* ירוק וואטסאפ */
       vertical-align: middle;
     }
     /* =========================
@@ -3370,6 +3370,7 @@
     display: none; /* בלי טקסט במובייל */
   }
 }
+
 
 
 
