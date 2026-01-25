@@ -250,7 +250,7 @@
         transform: translateX(-50%);
         margin: 0;
         padding: 0;
-        height: 20%;
+        height: 50%;
         z-index: 2;                    /* נמוך מהטקסט */
         pointer-events: none;    
         opacity: 0.9;      /* שלא תחסום קליקים על כפתור */
@@ -3308,6 +3308,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
