@@ -251,9 +251,9 @@
   .hero-image{
     position: absolute;
     left: 50%;
-    bottom: -25px;          /* היה -90px */
+    bottom: -90px;          /* היה -90px */
     transform: translateX(-50%);
-    width: min(360px, 92vw);
+    width: min(320px, 88vw);
     margin: 0;
     padding: 0;
     height: ;
@@ -3323,6 +3323,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
