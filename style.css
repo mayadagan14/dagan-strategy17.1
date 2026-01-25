@@ -436,6 +436,7 @@
      
 
     }
+    .cta-outline{color: white;}
     
   }
 
@@ -449,6 +450,7 @@
     .fit-img{
       height: 160px;
     }
+    .cta-outline{color: white;}
   }
 
     
@@ -3305,6 +3307,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
