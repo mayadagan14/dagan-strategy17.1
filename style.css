@@ -238,7 +238,7 @@
       .hero-text{
         position: relative;
         z-index: 10;
-        padding: 0 16px;
+       padding-bottom: 140px; 
         color:black;
       }
     
@@ -3307,6 +3307,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
