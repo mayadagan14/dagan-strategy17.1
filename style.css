@@ -224,6 +224,7 @@
 
       .hero{
         padding-bottom: 0;
+        position: relative;
       }
     
       
@@ -250,15 +251,15 @@
         width: min(360px, 92vw);
         margin: 0;
         padding: 0;
+        height: auto;
         z-index: 2;                    /* נמוך מהטקסט */
-        pointer-events: none;          /* שלא תחסום קליקים על כפתור */
+        pointer-events: none;    
+        opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
       }
     
       .hero-image img{
-        width: 100%;
-        height: auto;
+       
         object-fit: contain;
-        opacity: 0.9;
         filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
       }
     }
@@ -3091,6 +3092,7 @@
       margin-bottom: 20px;
       overflow: hidden;
     }
+
 
     .post-hero{
       padding: 22px 20px 10px;
