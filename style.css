@@ -139,7 +139,12 @@
       gap: 4px;
     }
     
-    
+    .topwhat{
+      color: var(--primary);
+      font-size: 18px;
+      text-decoration: none;
+
+    }
     .logo-img{
       height: 90px;
       width: auto;
@@ -180,13 +185,8 @@
       padding: 34px 0 26px;
       position: relative;
       overflow: hidden;
+      
     
-    }
-.topwhat{
-      color: var(--primary);
-      font-size: 18px;
-      text-decoration: none;
-
     }
     
     .hero::before{
@@ -208,10 +208,11 @@
       gap: 32px;
       direction: rtl;
       height: 400px;
+      
     }
     
     .hero-text{
-      margin-top: -20px;
+   margin-top: -20px;
       width: 100%;
       text-align: center;
       animation: rise .8s ease both;
@@ -244,7 +245,8 @@
       /* הטקסט מעל התמונה */
       .hero-text{
         position: relative;
-        z-index: 10; 
+        z-index: 10;
+        padding: 0 16px;
         color:black;
       }
     
@@ -254,12 +256,13 @@
         left: 50%;
         bottom: -90px;                 /* משחקים בזה */
         transform: translateX(-50%);
+        width: min(360px, 92vw);
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: auto;
         z-index: 2;                    /* נמוך מהטקסט */
         pointer-events: none;    
-        opacity: 0.9;      /* שלא תחסום קליקים על כפתור */
+        opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
       }
     
       .hero-image img{
@@ -441,8 +444,9 @@
      
 
     }
-    .cta-outline{color: white; 
+    .cta-outline{color: white;
       border: 2px solid white;}
+
     
   }
 
@@ -456,7 +460,8 @@
     .fit-img{
       height: 160px;
     }
-    .cta-outline{color: white; 
+  
+    .cta-outline{color: white;
       border: 2px solid white;}
   }
 
@@ -2054,7 +2059,6 @@
     .footer-sep{
       opacity: .4;
     }
-    
     /* מובייל */
     @media (max-width: 680px){
       .footer-extra-inner{
@@ -2068,11 +2072,11 @@
       color: #18ec66; /* ירוק וואטסאפ */
       vertical-align: middle;
     }
- .wa-iconw{
+    .wa-iconw{
       width: 25px;
       height: 25px;
       margin-left: 6px;
-      color: var(--primary2); /* ירוק וואטסאפ */
+      color: var(--primary); /* ירוק וואטסאפ */
       vertical-align: middle;
     }
     /* =========================
@@ -2209,10 +2213,6 @@
       }
     
       .wa-icon{
-        width: 18px;
-        height: 18px;
-      }
-       .wa-iconw{
         width: 18px;
         height: 18px;
       }
@@ -3325,69 +3325,3 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
-.topwhat{
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #25D366;
-}
-
-/* ===== Mobile only ===== */
-@media (max-width: 768px){
-
-  /* להסתיר מהניווט העליון */
-  .nav .topwhat{
-    display: none;
-  }
-
-  /* גרסה צפה */
-  .topwhat{
-    position: fixed;
-    bottom: 20px;
-    left: 16px; /* RTL – שמאל */
-    z-index: 9999;
-
-    background: #25D366;
-    color: #fff;
-    padding: 14px;
-    border-radius: 50%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-
-    width: 56px;
-    height: 56px;
-    justify-content: center;
-  }
-
-  .topwhat svg{
-    width: 26px;
-    height: 26px;
-  }
-
-  .topwhat span,
-  .topwhat:not(svg){
-    display: none; /* בלי טקסט במובייל */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
