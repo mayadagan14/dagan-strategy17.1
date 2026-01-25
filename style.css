@@ -254,7 +254,7 @@
         height: auto;
         z-index: 2;                    /* נמוך מהטקסט */
         pointer-events: none;    
-        opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
+        opacity: 0.9;      /* שלא תחסום קליקים על כפתור */
       }
     
       .hero-image img{
@@ -3305,3 +3305,4 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
