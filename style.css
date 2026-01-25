@@ -3325,6 +3325,51 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+.topwhat{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #25D366;
+}
+
+/* ===== Mobile only ===== */
+@media (max-width: 768px){
+
+  /* להסתיר מהניווט העליון */
+  .nav .topwhat{
+    display: none;
+  }
+
+  /* גרסה צפה */
+  .topwhat{
+    position: fixed;
+    bottom: 20px;
+    left: 16px; /* RTL – שמאל */
+    z-index: 9999;
+
+    background: #25D366;
+    color: #fff;
+    padding: 14px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+  }
+
+  .topwhat svg{
+    width: 26px;
+    height: 26px;
+  }
+
+  .topwhat span,
+  .topwhat:not(svg){
+    display: none; /* בלי טקסט במובייל */
+  }
+}
 
 
 
