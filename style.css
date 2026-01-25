@@ -2718,7 +2718,8 @@
     
     /* רספונסיבי */
     @media (max-width: 900px) {
-      .retainer-page .grid-2{ grid-template-columns: 1fr; }
+      .retainer-page .grid-2{ grid-template-columns: 1fr; gap: 2px;
+        padding-top: 24px; }
       
     }
     @media (max-width: 420px){
@@ -2729,10 +2730,7 @@
       .retainer-page .service-card {
         height: auto;
       }
-      .retainer-page .section.alt .grid-2{
-    
-        padding-top: 12px;  /* תכווני עד שזה יושב מושלם */
-      }
+      
     }
     .retainer-page .section.alt{
       position: relative;  /* כדי שהחץ ימדד מה-section הזה */
