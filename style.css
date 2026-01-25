@@ -253,7 +253,6 @@
     left: 50%;
     bottom: -25px;          /* היה -90px */
     transform: translateX(-50%);
-    width: min(320px, 88vw); /* קצת קטן יותר */
     margin: 0;
     padding: 0;
     height: auto;
@@ -3323,4 +3322,5 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
