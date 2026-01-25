@@ -228,50 +228,48 @@
     height: 110%;
     right: -60px;;
     }
-    @media (max-width: 768px){
+  @media (max-width: 768px){
 
-      .hero{
-        padding-bottom: 0;
-        position: relative;
-      }
-    
-      
-      .hero-inner{
-        position: relative;
-        padding-bottom: 140px; /* לא חייב גדול כי הטקסט יושב מעל */
-        text-align: center;
-      }
-    
-      /* הטקסט מעל התמונה */
-      .hero-text{
-        position: relative;
-        z-index: 10;
-        padding: 0 16px;
-        color:black;
-      }
-    
-      /* התמונה מאחור וחופפת */
-      .hero-image{
-        position: absolute;
-        left: 50%;
-        bottom: -90px;                 /* משחקים בזה */
-        transform: translateX(-50%);
-        width: min(360px, 92vw);
-        margin: 0;
-        padding: 0;
-        height: auto;
-        z-index: 2;                    /* נמוך מהטקסט */
-        pointer-events: none;    
-        opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
-      }
-    
-      .hero-image img{
-       
-        object-fit: contain;
-        filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
-      }
-    }
-    
+  .hero{
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .hero-inner{
+    position: relative;
+    padding-bottom: 40px;   /* היה 140px */
+    text-align: center;
+  }
+
+  .hero-text{
+    position: relative;
+    z-index: 10;
+    padding: 0 16px;
+    color: black;
+  }
+
+  .hero-image{
+    position: absolute;
+    left: 50%;
+    bottom: -25px;          /* היה -90px */
+    transform: translateX(-50%);
+    width: min(320px, 88vw); /* קצת קטן יותר */
+    margin: 0;
+    padding: 0;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  .hero-image img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
+  }
+}
+
 
   
     h1{
@@ -3325,3 +3323,4 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
