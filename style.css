@@ -2062,6 +2062,13 @@
       color: #18ec66; /* ירוק וואטסאפ */
       vertical-align: middle;
     }
+ .wa-iconw{
+      width: 25px;
+      height: 25px;
+      margin-left: 6px;
+      color: var(--primary); /* ירוק וואטסאפ */
+      vertical-align: middle;
+    }
     /* =========================
     MOBILE / TABLET RESPONSIVE
     ========================= */
@@ -3308,6 +3315,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
