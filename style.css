@@ -228,46 +228,37 @@
     height: 110%;
     right: -60px;;
     }
-  @media (max-width: 768px){
+ @media (max-width: 768px){
 
   .hero{
-    padding-bottom: 0;
-    position: relative;
+    min-height: auto !important;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 24px;
   }
 
   .hero-inner{
-    position: relative;
-    padding-bottom: 40px;   /* היה 140px */
-    text-align: center;
+    display: block;
   }
 
   .hero-text{
-    position: relative;
-    z-index: 10;
-    padding: 0 16px;
-    color: black;
+    margin-bottom: 16px;
   }
 
   .hero-image{
-    position: absolute;
-    left: 50%;
-    bottom: -90px;          /* היה -90px */
-    transform: translateX(-50%);
-    width: min(320px, 88vw);
+    position: relative;
     margin: 0;
-    padding: 0;
-    height: ;
-    z-index: 2;
-    pointer-events: none;
-    opacity: 0.2;
   }
 
   .hero-image img{
     width: 100%;
     height: auto;
+    max-height: 420px; /* ↓ זה מוריד גובה */
     object-fit: contain;
-    filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
+    display: block;
+    margin: 0 auto;
   }
+
 }
 
 
@@ -3323,6 +3314,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
