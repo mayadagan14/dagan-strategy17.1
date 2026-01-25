@@ -2206,6 +2206,10 @@
         width: 18px;
         height: 18px;
       }
+       .wa-iconw{
+        width: 18px;
+        height: 18px;
+      }
     }
     
     /* ממש קטן (טלפונים קטנים) */
@@ -3315,6 +3319,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
