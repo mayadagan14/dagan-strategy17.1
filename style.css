@@ -247,7 +247,7 @@
         left: 50%;
         bottom: -90px;                 /* משחקים בזה */
         transform: translateX(-50%);
-        max-width: 70%;
+        max-width: 20%;
         margin: 0;
         padding: 0;
         height: auto;
@@ -3308,6 +3308,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
