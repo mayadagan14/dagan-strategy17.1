@@ -2739,8 +2739,10 @@
         padding: 52px 0 28px;
         min-height: 230px;
       }
+      
       .retainer-page .service-card {
         height: auto;
+        margin-top: 10px;
       }
       
     }
@@ -3291,6 +3293,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
