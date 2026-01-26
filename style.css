@@ -3289,4 +3289,126 @@
     .post-table table{ min-width: 680px; }
     .post-table th, .post-table td{ font-size: 14px; }
   }
-  
+  /* ===== Privacy Modal ===== */
+.privacy-modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.privacy-modal[aria-hidden="false"]{
+  display: flex;
+}
+
+.privacy-modal-content{
+  background: #fff;
+  width: min(720px, 92%);
+  max-height: 85vh;
+  border-radius: 18px;
+  padding: 24px 22px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+}
+
+.privacy-scroll{
+  overflow-y: auto;
+  max-height: 60vh;
+  padding-inline-end: 6px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.privacy-close{
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.privacy-link{
+  background: none;
+  border: 0;
+  padding: 0;
+  color: #6a2ca0;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
+/* ===== Privacy page styling ===== */
+.privacy-page .section-title{
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.privacy-page .privacy-content{
+  max-width: 920px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(15,23,42,0.10);
+  border-radius: 22px;
+  padding: 26px 22px;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.95;
+  font-size: 15px;
+  color: rgba(10,22,18,0.92);
+}
+
+.privacy-page .privacy-content p{
+  margin: 0 0 12px;
+}
+
+/* שורה ראשונה "עודכן" - עדין */
+.privacy-page .privacy-content p:first-child{
+  color: rgba(10,22,18,0.55);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+/* "כותרות" שמופיעות כפסקה עם נקודתיים בסוף — בלי לשנות טקסט */
+.privacy-page .privacy-content p:has(strong){
+  margin-top: 18px;
+}
+
+/* אם הכותרות אצלך הן ממש פסקאות שמסתיימות ב-":" */
+.privacy-page .privacy-content p:nth-child(n){
+  /* נשאיר ריק – לא חובה */
+}
+
+/* טריק: כל פסקה קצרה שמסתיימת בנקודתיים תיראה כמו כותרת */
+.privacy-page .privacy-content p{
+  position: relative;
+}
+
+.privacy-page .privacy-content p:is(:where(:not(:has(a)))):where(:not(:has(br))){
+  /* ללא שינוי – רק כדי לא לפגוע */
+}
+
+.privacy-page .privacy-content p.title-like{
+  font-weight: 900;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: rgba(56,107,72,1);
+}
+
+/* קישורים */
+.privacy-page .privacy-content a{
+  color: rgba(56,107,72,1);
+  text-decoration: underline;
+}
+
+/* מובייל */
+@media (max-width: 768px){
+  .privacy-page .privacy-content{
+    padding: 18px 14px;
+    font-size: 14.5px;
+    border-radius: 18px;
+  }
+}
