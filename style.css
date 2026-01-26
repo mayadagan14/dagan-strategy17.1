@@ -391,7 +391,7 @@
   /* תמונה אחידה */
   .fit-img{
     width: 100%;
-    height: 140px;              /* אחיד לכל הכרטיסים */
+    height: 170px;              /* אחיד לכל הכרטיסים */
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid rgba(15,23,42,0.10);
@@ -484,8 +484,6 @@
       position: relative;
       z-index: 1;
     }
-    
-  
     
     /* Waves / bubbles top ornament */
     .services-shell::before{
@@ -2739,7 +2737,6 @@
         padding: 52px 0 28px;
         min-height: 230px;
       }
-      
       .retainer-page .service-card {
         height: auto;
         margin-top: 10px;
@@ -3293,10 +3290,3 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
-
-
-
-
-
-
-
