@@ -2755,20 +2755,21 @@
     }
     .retainer-page .section.alt{
       position: relative;  /* כדי שהחץ ימדד מה-section הזה */
-      overflow: hidden;    /* שלא ייצא החוצה */
+      overflow: hidden;    
     }
-    
     
     .retainer-page .branch-arrows{
       position: absolute;
       top: -20px;              /* 🔥 מתחיל ישר בתחילת הלבן */
       left: 50%;
-      transform: translateX(-50%);
       width: min(620px, 92%);
       height: 170px;       /* "גובה" אזור החץ */
       pointer-events: none;
-      z-index: 0;          /* מתחת לכרטיסים */
+      z-index: 0;  
+      transform: translate(-50%, -8px);
+      animation: arrowWrapIn .20s ease-out forwards;
     }
+  
     .retainer-page .section.alt .grid-2{
       position: relative;
       z-index: 1;
@@ -2780,50 +2781,22 @@
       opacity: .95;
     }
     
-    /* צבע וקווים */
-    .branch-arrows .stem,
-    .branch-arrows .branch{
-      fill: none;
-      stroke: #3f7f5f;
-      stroke-width: 8;
-      stroke-linecap: round;
-    }
-    
-    /* ראשי חץ + נקודה */
-    .branch-arrows .head,
-    .branch-arrows .dot{
-      fill: #3f7f5f;
-    }
-    
-    /* אנימציה (ציור קו) */
-    .branch-arrows .stem,
-    .branch-arrows .branch{
-      stroke-dasharray: 520;
-      stroke-dashoffset: 520;
-      animation: draw 1.1s ease forwards;
-    }
-    
     .branch-arrows .branch.left{  animation-delay: .15s; }
     .branch-arrows .branch.right{ animation-delay: .15s; }
     
-    
     @keyframes draw{ to{ stroke-dashoffset: 0; } }
     @keyframes pop{ to{ opacity: 1; } }
-      
-
-    /* החץ - מופיע ראשון */
-  .retainer-page .branch-arrows{
-    opacity: 0;
-    transform: translate(-50%, -8px);
-    animation: arrowWrapIn .35s ease-out forwards;
-  }
-
+  
   /* מצייר את הקווים */
   .retainer-page .branch-arrows .stem,
   .retainer-page .branch-arrows .branch{
     stroke-dasharray: 520;
     stroke-dashoffset: 520;
     animation: draw 1.1s ease forwards;
+    fill: none;
+      stroke: #3f7f5f;
+      stroke-width: 8;
+      stroke-linecap: round;
   }
 
   /* ראשים ונקודה */
@@ -2831,7 +2804,8 @@
   .retainer-page .branch-arrows .dot{
     opacity: 0;
     animation: pop .25s ease forwards;
-    animation-delay: .95s;
+    animation-delay: .45s;
+    fill: #3f7f5f;
   }
 
   /* הכרטיסים - יופיעו רק אחרי החץ */
@@ -2860,6 +2834,7 @@
   @media (max-width: 768px){
     .retainer-page .branch-arrows{
       display: none;
+      height: 0;
     }
   }
   
