@@ -253,7 +253,7 @@
       /* התמונה מאחור וחופפת */
       .hero-image{
         left: 50%;
-        height: 80%;
+        height: 85%;
       }
     
       .hero-image img{
@@ -430,7 +430,7 @@
       gap: 16px;
     }
     .lead{   /* תעלי ל־22px / 24px לפי הטעם */
-      font-size: 20px;
+      font-size: 17px;
       color: black;
      
 
@@ -3293,6 +3293,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
