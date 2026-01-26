@@ -228,39 +228,50 @@
     height: 110%;
     right: -60px;;
     }
- @media (max-width: 768px){
+    @media (max-width: 768px){
 
-  .hero{
-    min-height: auto !important;
-    height: auto;
-    padding-top: 32px;
-    padding-bottom: 24px;
-  }
-
-  .hero-inner{
-    display: block;
-  }
-
-  .hero-text{
-    margin-bottom: 16px;
-  }
-
-  .hero-image{
-    position: relative;
-    margin: 0;
-  }
-
-  .hero-image img{
-    width: 100%;
-    height: auto;
-    max-height: 420px; /* ↓ זה מוריד גובה */
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-  }
-
-}
-
+      .hero{
+        padding-bottom: 0;
+        position: relative;
+      }
+    
+      
+      .hero-inner{
+        position: relative;
+        padding-bottom: 140px; /* לא חייב גדול כי הטקסט יושב מעל */
+        text-align: center;
+      }
+    
+      /* הטקסט מעל התמונה */
+      .hero-text{
+        position: relative;
+        z-index: 10;
+        padding: 0 16px;
+        color:black;
+      }
+    
+      /* התמונה מאחור וחופפת */
+      .hero-image{
+        position: absolute;
+        left: 50%;
+        bottom: -90px;                 /* משחקים בזה */
+        transform: translateX(-50%);
+        width: min(360px, 92vw);
+        margin: 0;
+        padding: 0;
+        height: auto;
+        z-index: 2;                    /* נמוך מהטקסט */
+        pointer-events: none;    
+        opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
+      }
+    
+      .hero-image img{
+       
+        object-fit: contain;
+        filter: drop-shadow(0 14px 30px rgba(0,0,0,0.18));
+      }
+    }
+    
 
   
     h1{
@@ -3314,8 +3325,3 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
-
-
-
-
-
