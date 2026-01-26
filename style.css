@@ -252,17 +252,8 @@
     
       /* התמונה מאחור וחופפת */
       .hero-image{
-        position: absolute;
         left: 50%;
-        bottom: -90px;                 /* משחקים בזה */
-        transform: translateX(-50%);
-        width: min(360px, 92vw);
-        margin: 0;
-        padding: 0;
         height: 50%;
-        z-index: 2;                    /* נמוך מהטקסט */
-        pointer-events: none;    
-        opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
       }
     
       .hero-image img{
@@ -3300,4 +3291,5 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
