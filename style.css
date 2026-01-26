@@ -259,7 +259,7 @@
         width: min(360px, 92vw);
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 50%;
         z-index: 2;                    /* נמוך מהטקסט */
         pointer-events: none;    
         opacity: 0.2;      /* שלא תחסום קליקים על כפתור */
@@ -3300,3 +3300,4 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
