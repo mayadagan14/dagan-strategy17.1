@@ -16,17 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // ===== Read more =====
-    const readmoreBox = document.getElementById("readmoreBox");
-    const readmoreBtn = document.getElementById("readmoreBtn");
-  
-    if (readmoreBox && readmoreBtn) {
-      readmoreBtn.addEventListener("click", () => {
-        const isOpen = readmoreBox.classList.toggle("open");
-        readmoreBtn.textContent = isOpen ? "סגרו" : "המשיכו לקרוא";
-        readmoreBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    }
   
     // ===== Dropdown: services (tap/click support) =====
     document.addEventListener("DOMContentLoaded", () => {
@@ -355,4 +344,21 @@ Action Items ברורים ומוגדרים: </strong>
       sub.hidden = isOpen;
     });
   })();
-  
+  const openBtn = document.getElementById('openPrivacy');
+const modal = document.getElementById('privacyModal');
+const closeBtn = document.getElementById('closePrivacy');
+
+openBtn.addEventListener('click', () => {
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+});
+
+closeBtn.addEventListener('click', closeModal);
+modal.addEventListener('click', e => {
+  if(e.target === modal) closeModal();
+});
+
+function closeModal(){
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
