@@ -253,7 +253,7 @@
       /* התמונה מאחור וחופפת */
       .hero-image{
         left: 50%;
-        height: 50%;
+        height: 80%;
       }
     
       .hero-image img{
@@ -3291,6 +3291,7 @@
     .post-table th, .post-table td{ font-size: 14px; }
   }
   
+
 
 
 
