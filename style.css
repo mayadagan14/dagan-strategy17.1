@@ -432,10 +432,10 @@
     
     .lead{   /* תעלי ל־22px / 24px לפי הטעם */
       margin-top: 25px;
-      font-size: 17px;
+      font-size: 15px;
       color: black;
       line-height: 1.25;
-      margin-bottom: 90px;
+      margin-bottom: 85px;
 
     }
     .cta-outline{color: white;
@@ -3462,6 +3462,7 @@
       margin: 0 auto;
     }
   }
+
 
 
 
