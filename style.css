@@ -752,7 +752,7 @@
       .nav{ display:none; }
       .menu-btn{ display:inline-block; }
       .header-inner{ grid-template-columns: 1fr auto auto; }
-      h1{ font-size:20px; margin-bottom: 1px;}
+      h1{ font-size:20px; margin-bottom: 3px;}
     
       .grid-3{ grid-template-columns: 1fr; }
 
