@@ -432,6 +432,7 @@
     .lead{   /* תעלי ל־22px / 24px לפי הטעם */
       font-size: 17px;
       color: black;
+      margin-top: 20px;
      
 
     }
@@ -747,7 +748,7 @@
       .nav{ display:none; }
       .menu-btn{ display:inline-block; }
       .header-inner{ grid-template-columns: 1fr auto auto; }
-      h1{ font-size:30px; }
+      h1{ font-size:20px; }
     
       .grid-3{ grid-template-columns: 1fr; }
 
@@ -3418,11 +3419,11 @@
     right: 16px; /* RTL – מימין ללוגו */
     z-index: 10;
     color: var(--primary);
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
   }
 
   .wa-iconw{
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
   }}
