@@ -602,9 +602,11 @@
     /* ================= Sections ================= */
   /* ===== Contact page: bigger + nicer ===== */
   .section{
-      padding: 90px 0;
+      padding: 70px 0;
     }
-  
+    body.service-consulting .section{
+      padding: 15px 0 ;
+    }
     
     .container.split{
       display: grid;
@@ -1607,7 +1609,6 @@
       background: radial-gradient(1200px 600px at 70% 10%, --primary, transparent 60%);
     }
     .consulting-hero{
-
       position: relative;
       height: 370px;
     background: url(images/דילמות-תמונה.jpg)center/cover no-repeat;
@@ -1889,16 +1890,16 @@
     .process-title{
       text-align: center;
       font-weight: 900;
-      font-size: clamp(26px, 3.2vw, 44px);
+      font-size: 50px;
       color: var(--primary);
-      margin-top: -50px;
-      
+   
     }
     .process-subtitle{
       text-align: center;
       font-weight: 600;
       font-size: 20px;
       color:black;
+      margin-top: 0;
     }
     /* שמאל – התרשים נשאר עם רוחב קבוע */
     .process-left{
@@ -2615,21 +2616,19 @@
     }
     .image-360{
       position: relative;
-      height: 370px; /* פס צר */
-      background: url("./images/financepage.png") center/cover no-repeat;
+      height: 370px;
+      min-height: 260px;
+      background: url("./images/financial-plan.jpg") center/cover no-repeat;
       display: flex;
       justify-content: center;
       align-items: flex-start; /* מתחילים מלמעלה */
       overflow: hidden;
-    
     }
   
     .retainer-hero{
-
       position: relative;
-      height: auto;
+      height: 370px;
       min-height: 260px;
-    
     background: url(images/finance_countinu.jpg)center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -2644,7 +2643,7 @@
     
     .retainer-page .section-title{
       color: var(--primary);
-      font-size: clamp(42px, 5vw, 64px);
+      font-size: 55px;
       font-weight: 900;
       margin-bottom: 10px;
     }
@@ -3376,19 +3375,12 @@
   margin-top: 18px;
 }
 
-/* אם הכותרות אצלך הן ממש פסקאות שמסתיימות ב-":" */
-.privacy-page .privacy-content p:nth-child(n){
-  /* נשאיר ריק – לא חובה */
-}
 
 /* טריק: כל פסקה קצרה שמסתיימת בנקודתיים תיראה כמו כותרת */
 .privacy-page .privacy-content p{
   position: relative;
 }
 
-.privacy-page .privacy-content p:is(:where(:not(:has(a)))):where(:not(:has(br))){
-  /* ללא שינוי – רק כדי לא לפגוע */
-}
 
 .privacy-page .privacy-content p.title-like{
   font-weight: 900;
