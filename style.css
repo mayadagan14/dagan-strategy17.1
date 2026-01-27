@@ -429,13 +429,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
+    
     .lead{   /* תעלי ל־22px / 24px לפי הטעם */
       margin-top: 0;
       font-size: 17px;
       color: black;
-      margin-bottom: 0;
-     
-     
 
     }
     .cta-outline{color: white;
