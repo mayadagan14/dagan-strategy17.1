@@ -437,7 +437,8 @@
 
     }
     .cta-outline{color: white;
-      border: 2px solid white;}
+      border: 2px solid white;
+    margin-top: 40px;}
 
     
   }
@@ -748,7 +749,7 @@
       .nav{ display:none; }
       .menu-btn{ display:inline-block; }
       .header-inner{ grid-template-columns: 1fr auto auto; }
-      h1{ font-size:20px; }
+      h1{ font-size:20px; margin-bottom: 8px;}
     
       .grid-3{ grid-template-columns: 1fr; }
 
