@@ -430,9 +430,10 @@
       gap: 16px;
     }
     .lead{   /* תעלי ל־22px / 24px לפי הטעם */
+      margin-top: 0;
       font-size: 17px;
       color: black;
-      margin-top: 20px;
+     
      
 
     }
@@ -749,7 +750,7 @@
       .nav{ display:none; }
       .menu-btn{ display:inline-block; }
       .header-inner{ grid-template-columns: 1fr auto auto; }
-      h1{ font-size:20px; margin-bottom: 8px;}
+      h1{ font-size:20px; margin-bottom: 1px;}
     
       .grid-3{ grid-template-columns: 1fr; }
 
