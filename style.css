@@ -433,13 +433,14 @@
       margin-top: 0;
       font-size: 17px;
       color: black;
+      margin-bottom: 0;
      
      
 
     }
     .cta-outline{color: white;
       border: 2px solid white;
-    margin-top: 40px;}
+    margin-top: 60px;}
 
     
   }
