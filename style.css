@@ -225,8 +225,8 @@
       animation-delay: .08s;
     position: absolute;
     bottom: 0;             /* 🔥 צמוד לתחתית ה-hero */
-    height: 110%;
-    right: -60px;;
+    height: 100%;
+    right: -90px;;
     }
     @media (max-width: 768px){
 
@@ -269,7 +269,7 @@
       font-weight: 900;
       margin-bottom: 12px;
       color:var(--primary);
-      font-size: 60px;
+      font-size: 45px;
     }
     .lead{
       margin-top: 50px;
@@ -3412,3 +3412,25 @@
     border-radius: 18px;
   }
 }
+.topwhatmobile{
+  display: none;
+}
+@media (max-width: 900px){
+  .topwhatmobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px; /* RTL – מימין ללוגו */
+    z-index: 10;
+    color: var(--primary);
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .wa-iconw{
+    width: 26px;
+    height: 26px;
+  }}
