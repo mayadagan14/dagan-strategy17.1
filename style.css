@@ -2610,6 +2610,7 @@
     align-items: flex-start; /* מתחילים מלמעלה */
     overflow: hidden;
       opacity: 0.8;
+
     
     }
     .retainer-page .retainer-hero .container p{
@@ -2626,6 +2627,7 @@
     }
     
     .retainer-page .section-subtitle{
+   
       font-weight: 800;
       color: var(--primary2);
       font-size: 25px;
@@ -2704,12 +2706,12 @@
     /* רספונסיבי */
     @media (max-width: 900px) {
       .retainer-page .grid-2{ grid-template-columns: 1fr; gap: 2px;
-        padding-top: 24px; }
+        padding-top: 10px; }
       
     }
     @media (max-width: 420px){
       .retainer-hero{
-        padding: 52px 0 28px;
+      
         min-height: 230px;
       }
       .retainer-page .service-card {
