@@ -431,7 +431,7 @@
     }
     
     .lead{   /* תעלי ל־22px / 24px לפי הטעם */
-      margin-top: 5px;
+      margin-top: 15px;
       font-size: 17px;
       color: black;
       line-height: 1.25;
@@ -3462,3 +3462,4 @@
       margin: 0 auto;
     }
   }
+
