@@ -3519,6 +3519,9 @@ height: 20px;
   .topwhatmobile{
     width: 52px;
     height: 52px;
-    bottom: 82px;
+  }
+  .topwhatmobile .wa-iconw{
+    width: 24px;
+    height: 24px;
   }
 }
