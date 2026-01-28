@@ -6902,10 +6902,20 @@ border-radius: 18px;
   margin: 0 auto;
 }
 }
-
+/* ===== Floating WhatsApp (Desktop + Mobile) ===== */
+/* ===== Floating WhatsApp – round icon ===== */
 /* ===== Floating WhatsApp (image) ===== */
 .topwhatmobile{
   display: none;
+  
+}
+
+/* תמונת הלוגו עצמה */
+.topwhatmobile .wa-img{
+  width: 28px;      /* גודל האייקון */
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 /* מובייל קטן */
@@ -6924,14 +6934,9 @@ border-radius: 18px;
     background: #24d665;        /* ירוק וואטסאפ */
     border-radius: 50%;
     box-shadow: 0 12px 28px rgba(0,0,0,.25);
-    text-decoration: none;}
-
-  .topwhatmobile .wa-iconw,
-  .topwhatmobile img{
-    width: 26px;
-    height: 26px;
-    display: block;
+    text-decoration: none;
   }
+  
 }
 
 
