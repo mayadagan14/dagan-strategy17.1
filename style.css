@@ -6725,8 +6725,8 @@ border-radius: 18px;
 
 /* תמונת הלוגו עצמה */
 .topwhatmobile .wa-img{
-  width: 28px;      /* גודל האייקון */
-  height: 28px;
+  width: 40px;      /* גודל האייקון */
+  height: 40px;
   object-fit: contain;
   display: block;
 }
