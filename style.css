@@ -2124,6 +2124,7 @@ MOBILE / TABLET RESPONSIVE
   /* NOTE */
   .process-note{
     font-size: 15px;
+    margin-right: 0;
     padding: 14px 16px;
   }
 
@@ -5489,6 +5490,7 @@ MOBILE / TABLET RESPONSIVE
   .process-note{
     font-size: 15px;
     padding: 14px 16px;
+    margin-right: 0;
   }
 
   /* FOOTER EXTRA */
