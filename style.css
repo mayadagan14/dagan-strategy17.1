@@ -158,15 +158,21 @@ main{
 }
 
 .menu-btn{
-  display:none;
-  border: 1px solid rgba(15,23,42,0.10);
-  background:#fff;
-  padding: 10px 14px;
+  display: flex;                 /* 🔥 */
+  align-items: center;           /* 🔥 */
+  justify-content: center;       /* 🔥 */
+
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid rgba(15,23,42,0.12);
+  background: #fff;
   border-radius: 12px;
-  cursor:pointer;
-  font-size: 28px;
   box-shadow: var(--shadow-sm);
-  line-height: 1; 
+  cursor: pointer;
+
+  font-size: 28px;
+  line-height: 1;
 }
 
 .mobile-nav{
