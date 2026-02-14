@@ -206,13 +206,7 @@ content: "";
   
 }
 
-.hero-text{
-margin-top: -20px;
-  width: 100%;
-  text-align: center;
-  animation: rise .8s ease both;
-  
-}
+
 
 .hero-image{
   padding: 5px;
@@ -238,13 +232,7 @@ right: -90px;;
   }
 
   /* הטקסט מעל התמונה */
-  .hero-text{
-    position: relative;
-    z-index: 10;
-    padding: 0 16px;
-    color:black;
-  }
-
+ 
   /* התמונה מאחור וחופפת */
   .hero-image{
     left: 50%;
@@ -3551,14 +3539,6 @@ content: "";
   
 }
 
-.hero-text{
-margin-top: -20px;
-  width: 100%;
-  text-align: center;
-  animation: rise .8s ease both;
-  
-}
-
 .hero-image{
   padding: 5px;
   animation: rise .8s ease both;
@@ -6735,6 +6715,7 @@ border-radius: 18px;
 
 
   
+
 
 
 
