@@ -12,16 +12,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
   
- <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "יואב דגן",
-    "jobTitle": "מתכנן פיננסי",
-    "url": "https://dagan-strategy.com",
-    "image": "https://dagan-strategy.com/images/yoavd.png"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dagan-strategy.com/#website",
+      "url": "https://dagan-strategy.com/",
+      "name": "Dagan Strategy",
+      "inLanguage": "he-IL"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dagan-strategy.com/#yoav-dagan",
+      "name": "יואב דגן",
+      "url": "https://dagan-strategy.com/",
+      "image": "https://dagan-strategy.com/images/yoavd.png",
+      "jobTitle": "מתכנן פיננסי",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Dagan Strategy"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/yoav-dagan-dd/",
+        "https://www.facebook.com/yoav.dagan.7?locale=he_IL",
+        
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://dagan-strategy.com/#business",
+      "name": "Dagan Strategy",
+      "url": "https://dagan-strategy.com/",
+      "image": "https://dagan-strategy.com/images/yoavd.png",
+      "telephone": "+972523240978",
+      "areaServed": "IL",
+      "inLanguage": "he-IL",
+      "founder": { "@id": "https://dagan-strategy.com/#yoav-dagan" }
+    }
+  ]
+}
+</script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -453,5 +485,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
