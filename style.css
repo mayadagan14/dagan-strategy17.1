@@ -435,7 +435,7 @@ text-decoration: underline;
   font-size: 15px;
   color: black;
   line-height: 1.25;
-  margin-bottom: 85px;
+  
 
 }
 .cta-outline{color: white;
@@ -3781,15 +3781,6 @@ text-decoration: underline;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
-
-.lead{   /* תעלי ל־22px / 24px לפי הטעם */
-  margin-top: 25px;
-  font-size: 15px;
-  color: black;
-  line-height: 1.25;
-  margin-bottom: 85px;
-
-}
 .cta-outline{color: white;
   border: 2px solid white;
 margin-top: 100px;}
@@ -6766,6 +6757,7 @@ border-radius: 18px;
 
 
   
+
 
 
 
