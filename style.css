@@ -432,7 +432,7 @@ text-decoration: underline;
 
 .lead{   /* תעלי ל־22px / 24px לפי הטעם */
   margin-top: 2px;
-  font-size: 18px;
+  font-size: 20px;
   color: black;
   line-height: 1.25;
   
@@ -6751,6 +6751,7 @@ border-radius: 18px;
 
 
   
+
 
 
 
