@@ -229,7 +229,13 @@ right: -90px;;
     padding-bottom: 0;
     position: relative;
   }
-
+.hero-motiv{
+  font-weight: 600;
+  margin-bottom: 12px;
+  color:var(--primary);
+  font-size: 20px;
+}
+  
   
   .hero-inner{
     position: relative;
@@ -6761,3 +6767,4 @@ border-radius: 18px;
 
 
   
+
