@@ -231,9 +231,8 @@ right: -90px;;
   }
 .hero-motiv{
   font-weight: 600;
-  margin-bottom: 12px;
-  color:var(--primary);
   font-size: 20px;
+   margin-top: 5px;
 }
   
   
@@ -6767,4 +6766,5 @@ border-radius: 18px;
 
 
   
+
 
