@@ -3775,9 +3775,7 @@ text-decoration: underline;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
-.cta-outline{color: white;
-  border: 2px solid white;
-margin-top: 100px;}
+
 
 
 }
@@ -3793,9 +3791,6 @@ margin-top: 100px;}
   height: 160px;
 }
 
-.cta-outline{color: white;
-  border: 2px solid white;
-margin-top: 100px;}
 }
 
 
@@ -6751,6 +6746,7 @@ border-radius: 18px;
 
 
   
+
 
 
 
