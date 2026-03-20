@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="description" content="תכנון פיננסי מקיף, תכנון פיננסי למשפחות, ייעוץ פיננסי אובייקטיבי">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>תכנון פיננסי 360 | תהליך תכנון פיננסי מקיף</title>
 
-
-  <!-- Font (יוקרתי ונקי) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,227 +15,295 @@
 
 <body>
 
-<!-- ================= Header ================= -->
-<header class="site-header">
-  <div class="container header-inner">
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
 
-    
-    <nav class="nav" aria-label="תפריט ראשי">
+      <nav class="nav" aria-label="תפריט ראשי">
         <a class="nav-link" href="index.html">דף הבית</a>
         <a class="nav-link" href="about.html">אודות</a>
-        
-        
+
         <div class="nav-dropdown">
           <button class="nav-link nav-dropbtn active" type="button" aria-haspopup="true" aria-expanded="false">
             שירותים <span class="nav-caret">▾</span>
           </button>
           <div class="dropdown" role="menu" aria-label="שירותים">
-              <a href="services-financial-360.html">תכנון פיננסי 360</a>
-              <a href="services-consulting.html">ייעוץ פיננסי</a>
-              <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
-              <a href="services-retainer.html">ליווי מתמשך</a>
-            </div>
-            
+            <a href="services-financial-360.html">תכנון פיננסי 360</a>
+            <a href="services-consulting.html">ייעוץ פיננסי</a>
+            <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
+            <a href="services-retainer.html">ליווי מתמשך</a>
+          </div>
         </div>
-        
-  
+
         <a class="nav-link" href="blog.html">בלוג</a>
         <a class="nav-link" href="faq.html">שאלות ותשובות</a>
         <a class="nav-link-contact" href="contact.html">צור קשר</a>
+
         <a class="topwhat" href="https://wa.me/972549002792" target="_blank" rel="noopener">
           <svg class="wa-iconw" viewBox="0 0 32 32" aria-hidden="true">
             <path fill="currentColor"
               d="M19.11 17.36c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.21-.59.07-.27-.14-1.14-.42-2.17-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.99 2.65 1.13 2.84.14.18 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.6-.66 1.83-1.3.23-.64.23-1.18.16-1.3-.07-.11-.25-.18-.52-.32zM16.01 3C9.38 3 4 8.08 4 14.34c0 2.53.88 4.85 2.36 6.72L5 29l8.12-1.27c1.2.33 2.47.51 3.89.51 6.63 0 12.01-5.08 12.01-11.34C28.02 8.08 22.64 3 16.01 3zm0 22.02c-1.29 0-2.55-.18-3.74-.53l-.27-.08-4.82.75.79-4.55-.18-.28c-1.34-1.84-2.05-4-2.05-6.23 0-5.93 5.16-10.77 11.27-10.77 6.11 0 11.27 4.83 11.27 10.77 0 5.93-5.16 10.76-11.27 10.76z"/>
           </svg>
-          WhatsApp 
+          WhatsApp
         </a>
-  
       </nav>
-    
 
-    <a class="logo-center" href="index.html" aria-label="דף הבית - דגן אסטרטגיה">
-      <img class="logo-img" src="images/logo.jpg" alt="דגן אסטרטגיה">
-    </a>
+      <a class="logo-center" href="index.html" aria-label="דף הבית - דגן אסטרטגיה">
+        <img class="logo-img" src="images/logo.jpg" alt="דגן אסטרטגיה">
+      </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
-  </div>
+      <button class="menu-btn" id="menuBtn" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+    </div>
 
- 
-  <div class="mobile-nav" id="mobileNav" hidden>
-    <a href="index.html">דף הבית</a>
-    <a href="about.html">אודות</a>
-   
-   <!-- שירותים (Dropdown בנייד) -->
-<button class="mnav-acc" type="button" id="mobileServicesBtn" aria-expanded="false">
-    שירותים <span class="mnav-caret">▾</span>
-  </button>
-  
-  <div class="mnav-sub" id="mobileServicesSub" hidden>
-    <a href="services-financial-360.html">תכנון פיננסי 360</a>
-    <a href="services-consulting.html">ייעוץ פיננסי</a>
-    <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
-    <a href="services-retainer.html">ליווי מתמשך</a>
-  </div>
-  <a href="blog.html">בלוג</a>
-  <a href="faq.html">שאלות ותשובות</a>
-  <a href="contact.html">צור קשר</a>
-  </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="index.html">דף הבית</a>
+      <a href="about.html">אודות</a>
 
-</header>
+      <button class="mnav-acc" type="button" id="mobileServicesBtn" aria-expanded="false">
+        שירותים <span class="mnav-caret">▾</span>
+      </button>
 
-<main>
-    <section class="image-360">
-      <h1 class="process-title">תכנון פיננסי 360 – תהליך תכנון פיננסי מקיף להשגת מטרות חיים</h1>
-      <div class="process-note">
-        <p>
-          התהליך נמשך לרוב <b>6–8 שבועות</b>, בקצב שמתאים לכם,<br>
-          ומסתיים לא רק בתוכנית – אלא בתחושת <b>שליטה, בהירות ושקט נפשי</b>,<br>
-          ובידיעה שהכסף שלכם עובד למען <b>מטרות החיים שלכם</b>.
-        </p>
+      <div class="mnav-sub" id="mobileServicesSub" hidden>
+        <a href="services-financial-360.html">תכנון פיננסי 360</a>
+        <a href="services-consulting.html">ייעוץ פיננסי</a>
+        <a href="services-realestate.html">תכנון השקעות נדל״ן 360</a>
+        <a href="services-retainer.html">ליווי מתמשך</a>
       </div>
-  
-      </section>
+
+      <a href="blog.html">בלוג</a>
+      <a href="faq.html">שאלות ותשובות</a>
+      <a href="contact.html">צור קשר</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="service-hero service-hero-clean">
+      <div class="container service-hero-inner">
     
-    <section class="section">
-        
-        <div class="container">
-
-          <p class="process-subtitle">לחצו על כל שלב כדי לקרוא עליו בהרחבה</p>
-          
-          <div class="process-layout">
-        
-            <!-- שמאל: תרשים -->
-            <div class="process-left">
-              
-          <div class="process-diagram">
-            
-          
-      
-            <!-- לוגו במרכז -->
-            <div class="circle-center">
-                <img class="circle-logo" src="images/logo.jpg" alt="Dagan Strategy">
-              </div>
-              
-              
-      
-            <!-- שלבים -->
-            <button class="step-btn active" data-step="1">
-              <strong>1</strong>
-              <span> היכרות והגדרת מטרות</span>
-            </button>
-      
-            <button class="step-btn" data-step="2">
-              <strong>2</strong>
-              <span>איסוף מידע</span>
-            </button>
-      
-            <button class="step-btn" data-step="3">
-              <strong>3</strong>
-              <span>ניתוח</span>
-            </button>
-      
-            <button class="step-btn" data-step="4">
-              <strong>4</strong>
-              <span>אסטרטגיה</span>
-            </button>
-      
-            <button class="step-btn" data-step="5">
-              <strong>5</strong>
-              <span>החלטות</span>
-            </button>
-      
-            <button class="step-btn" data-step="6">
-              <strong>6</strong>
-              <span>יישום</span>
-            </button>
-      
+        <div class="service-hero-content">
+          <p class="service-hero-kicker">DAGAN STRATEGY | תכנון פיננסי הוליסטי</p>
+    
+          <h1 class="service-hero-title">
+            תכנון פיננסי 360
+          </h1>
+    
+          <h2 class="service-hero-subtitle">
+            תהליך פיננסי מקיף להשגת מטרות החיים שלכם
+          </h2>
+    
+          <p class="service-hero-text">
+            תהליך אישי, בקצב שמתאים לכם, מובנה ומדויק למשפחות שרוצות יותר בהירות, יותר שליטה
+            ויותר שקט נפשי - מתוך ידיעה שהכסף שלהן עובד למען מטרות החיים שלהן.
+          </p>
+    
+          <div class="service-hero-meta">
+            <span>משך התהליך לרוב: 6–8 שבועות</span>
+            <span>ליווי אישי ומעמיק</span>
+            <span>מותאם למשפחה ולמטרותיה</span>
           </div>
-            </div>
-            <aside class="process-right">
-                <div class="process-card">
-                    <div id="processContent" class="process-content"></div>
-                  
-
-              </aside>
-        
-              
-              
-            </div>
-        
-          </div>
-        </section>
-        <section class="section">
-          <div class="container final-cta">
-              <p class="lead">
-             אני מזמין אותך לשיחה קצרה ולא מחייבת</p>
-            
+    
+          <div class="service-hero-actions">
             <a class="btn primary" href="contact.html">לתיאום שיחה</a>
+            <a class="btn ghost" href="#timelineCenter">לצפייה בשלבי התהליך</a>
           </div>
-        </section>
-      
-  </main>
-  
+        </div>
+    
+        <div class="service-hero-side" aria-hidden="true">
+          <div class="service-hero-card">
+            <div class="service-hero-card-line"></div>
+            <div class="service-hero-card-line short"></div>
+    
+            <div class="service-hero-badge">360</div>
 
-<footer class="site-footer">
+  <img class="hero-logo-bird" src="images/logo_bird.png" alt="">
+
+  <div class="service-hero-mini-list">
+    <span>מטרות חיים</span>
+    <span>אסטרטגיה</span>
+    <span>שליטה</span>
+    <span>שקט נפשי</span>
+  </div>
+          </div>
+          </div>
+        </div>
+    
+    
+    </section>
+
+    <!-- ================= TIMELINE SECTION ================= -->
+    <section class="section">
+      <div class="container">
+
+        <p class="process-subtitle">גללו לאורך התהליך או לחצו על כל שלב כדי לקרוא עליו בהרחבה</p>
+        <div class="timeline-section-wrap">
+
+          <div class="timeline-center" id="timelineCenter">
+            <span class="timeline-progress" id="timelineProgress" aria-hidden="true"></span>
+        
+            <button class="timeline-step left active" data-step="1" type="button">
+              <div class="timeline-card-mini">
+                
+                <h3>היכרות והגדרת מטרות</h3>
+                <p>פתיחת התהליך בהבנת מטרות החיים, סדרי העדיפויות ותיאום ציפיות.</p>
+              </div>
+              <span class="timeline-dot">1</span>
+
+              <span class="timeline-icon-out-left">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9"/>
+                  <circle cx="12" cy="12" r="5"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </span>
+            </button>
+        
+            <button class="timeline-step right" data-step="2" type="button">
+              <div class="timeline-card-mini">
+                <h3>איסוף מידע</h3>
+                <p>איסוף נתונים פיננסיים, ביטוחיים, פנסיוניים ומשפחתיים ליצירת תמונה מלאה.</p>
+              </div>
+              <span class="timeline-dot">2</span>
+              <span class="timeline-icon-out-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M6 2h9l5 5v15H6z"/>
+                <path d="M14 2v6h6"/>
+                </svg>
+                </span>
+            </button>
+        
+            <button class="timeline-step left" data-step="3" type="button">
+              <div class="timeline-card-mini">
+                <h3>ניתוח מצב קיים</h3>
+                <p>בחינה של המצב הקיים, זיהוי פערים, חוסרים, כפילויות והזדמנויות.</p>
+              </div>
+              <span class="timeline-dot">3</span>
+              <span class="timeline-icon-out-left">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="21" y1="21" x2="16.6" y2="16.6"/>
+                </svg>
+                </span>
+            </button>
+        
+            <button class="timeline-step right" data-step="4" type="button">
+              <div class="timeline-card-mini">
+                <h3>אסטרטגיה ותכנון</h3>
+                <p>בניית תוכנית פעולה מסודרת עם המלצות, עדיפויות וצעדים ברורים.</p>
+              </div>
+              <span class="timeline-dot">4</span>
+              <span class="timeline-icon-out-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="5" r="2"/>
+                <path d="M8 22h8"/>
+                <path d="M9 9h6l-1 4H10z"/>
+                <path d="M10 13l-2 6h8l-2-6"/>
+                </svg>
+                </span>
+            </button>
+        
+            <button class="timeline-step left" data-step="5" type="button">
+              <div class="timeline-card-mini">
+                <h3>קבלת החלטות</h3>
+                <p>בחירה בין חלופות וקבלת החלטות מושכלות בהתאם למטרות.</p>
+              </div>
+              <span class="timeline-dot">5</span>
+              <span class="timeline-icon-out-left">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                </span>
+            </button>
+        
+            <button class="timeline-step right" data-step="6" type="button">
+              <div class="timeline-card-mini">
+                <h3>יישום וליווי</h3>
+                <p>יישום בפועל, ליווי, בקרה והתאמות לאורך הדרך.</p>
+              </div>
+              <span class="timeline-dot">6</span>
+              <span class="timeline-icon-out-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="3 17 9 11 13 15 21 7"/>
+                <polyline points="14 7 21 7 21 14"/>
+                </svg>
+                </span>
+            </button>
+          </div>
+        
+          <aside class="process-detail-box">
+            <div id="processContent" class="process-content"></div>
+          </aside>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="section">
+      <div class="container final-cta">
+        <p class="lead">אני מזמין אותך לשיחה קצרה ולא מחייבת</p>
+        <a class="btn primary" href="contact.html">לתיאום שיחה</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
     <div class="container footer-inner">
-  
+
       <div class="footer-left">
         <strong>דגן אסטרטגיה</strong>
         <div class="muted">תכנון פיננסי הוליסטי למשפחות</div>
       </div>
-  
-      <!-- לוגו באמצע -->
+
       <div class="footer-logo">
         <img src="images/logo.jpg" alt="Dagan Strategy">
       </div>
-  
+
       <div class="footer-links">
         <a href="about.html">אודות</a>
         <a href="services.html">שירותים</a>
         <a href="contact.html">צור קשר</a>
       </div>
-  
+
     </div>
   </footer>
+
   <div class="footer-extra">
     <div class="container footer-extra-inner">
-  
-        <a href="https://wa.me/972549002792" target="_blank" rel="noopener" class="footer-link">
-            <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
-              <path fill="currentColor"
-                d="M19.11 17.36c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.21-.59.07-.27-.14-1.14-.42-2.17-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.99 2.65 1.13 2.84.14.18 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.6-.66 1.83-1.3.23-.64.23-1.18.16-1.3-.07-.11-.25-.18-.52-.32zM16.01 3C9.38 3 4 8.08 4 14.34c0 2.53.88 4.85 2.36 6.72L5 29l8.12-1.27c1.2.33 2.47.51 3.89.51 6.63 0 12.01-5.08 12.01-11.34C28.02 8.08 22.64 3 16.01 3zm0 22.02c-1.29 0-2.55-.18-3.74-.53l-.27-.08-4.82.75.79-4.55-.18-.28c-1.34-1.84-2.05-4-2.05-6.23 0-5.93 5.16-10.77 11.27-10.77 6.11 0 11.27 4.83 11.27 10.77 0 5.93-5.16 10.76-11.27 10.76z"/>
-            </svg>
-            WhatsApp
-          </a>
-          
-  
-      <a href="mailto:dagancfp@gmail.com" class="footer-link">
-        ✉️ אימייל
+
+      <a href="https://wa.me/972549002792" target="_blank" rel="noopener" class="footer-link">
+        <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path fill="currentColor"
+            d="M19.11 17.36c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.21-.59.07-.27-.14-1.14-.42-2.17-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.99 2.65 1.13 2.84.14.18 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.6-.66 1.83-1.3.23-.64.23-1.18.16-1.3-.07-.11-.25-.18-.52-.32zM16.01 3C9.38 3 4 8.08 4 14.34c0 2.53.88 4.85 2.36 6.72L5 29l8.12-1.27c1.2.33 2.47.51 3.89.51 6.63 0 12.01-5.08 12.01-11.34C28.02 8.08 22.64 3 16.01 3zm0 22.02c-1.29 0-2.55-.18-3.74-.53l-.27-.08-4.82.75.79-4.55-.18-.28c-1.34-1.84-2.05-4-2.05-6.23 0-5.93 5.16-10.77 11.27-10.77 6.11 0 11.27 4.83 11.27 10.77 0 5.93-5.16 10.76-11.27 10.76z"/>
+        </svg>
+        WhatsApp
       </a>
-  
-      <a href="privacy.html" class="footer-link">
-        🔐 מדיניות פרטיות
-      </a>
-  
+
+      <a href="mailto:dagancfp@gmail.com" class="footer-link">✉️ אימייל</a>
+      <a href="privacy.html" class="footer-link">🔐 מדיניות פרטיות</a>
+
       <span class="footer-sep">|</span>
-  
+
       <a href="https://share.google/3KUvRFzEkoz43UX1H" class="footer-link" target="_blank" rel="noopener">
         📈 מחשבון ריבית דריבית
       </a>
-      
+
       <a href="https://share.google/5d10lsNsfMuAiLt1C" class="footer-link" target="_blank" rel="noopener">
         🏠 מחשבון משכנתא / לוח שפיצר
       </a>
-      
+
       <a href="https://share.google/bFvg0QFTsK17xXrzh" class="footer-link" target="_blank" rel="noopener">
         🧾 מחשבון מס הכנסה
       </a>
-  
     </div>
   </div>
+
   <a class="topwhatmobile" href="https://wa.me/972549002792?text=היי%20יואב,%20אשמח%20לתאם%20שיחה%20לתכנון%20פיננסי." target="_blank" rel="noopener">
     <img src="images/whatsapp.jpg" alt="WhatsApp" class="wa-img">
   </a>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
