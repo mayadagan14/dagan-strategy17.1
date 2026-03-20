@@ -83,44 +83,65 @@
   </div>
   
 </header>
-
 <main class="blog">
   <section class="blog-section">
-  <div class="container">
+    <div class="container">
 
-    <header class="blog-head">
-      <h1>מאמרים על תכנון פיננסי</h1>
-    
-      <p>טיפים ותובנות שיעזרו לקבל החלטות פיננסיות נכונות.</p>
-    </header>
+      <header class="blog-head">
+        <h1>מאמרים על תכנון פיננסי</h1>
+        <p>טיפים ותובנות שיעזרו לקבל החלטות פיננסיות נכונות.</p>
+      </header>
 
-    <section class="blog-grid" aria-label="רשימת מאמרים">
 
-      <!-- מאמר 1 -->
-      <a class="post-card" href="post-blog1.html">
-        <div class="post-thumb">
-          <img src="images/Pictureblog1.jpg" alt="תמונה למאמר 1">
-        </div>
-        <div class="post-body">
-          <h2 class="post-title">רגש או היגיון? </h2>
-          <p class="post-excerpt">איך להפסיק להיות 'צרכן' של הכסף שלך ולהפוך לאסטרטג!</p>
-        </div>
-      </a>
-
-      <!-- מאמר 2 -->
-      <a class="post-card" href="post-blog2.html">
-        <div class="post-thumb">
-          <img src="images/blog2.jpg" alt="תמונה למאמר 2">
-        </div>
-        <div class="post-body">
-          <h2 class="post-title">שני צדדים של אותו מטבע</h2>
-          <p class="post-excerpt">הדומה והשונה בין תכנון אסטרטגיה פיננסית למשפחות לבין תכנון עסקי</p>
-        </div>
-      </a>
-
-    </section>
-
+      <section class="blog-carousel" aria-label="רשימת מאמרים">
+        <button class="blog-arrow blog-arrow-prev" id="blogPrev" aria-label="המאמר הקודם">
+          &#10094;
+        </button>
+      
+        <div class="blog-viewport">
+          <div class="blog-track" id="blogTrack">
+      
+            <a class="post-card" href="post-blog1.html">
+              <div class="post-thumb">
+                <img src="images/Pictureblog1.jpg" alt="תמונה למאמר 1">
+              </div>
+              <div class="post-body">
+                <h2 class="post-title">רגש או היגיון?</h2>
+                <p class="post-excerpt">איך להפסיק להיות "צרכן" של הכסף שלך ולהפוך לאסטרטג!</p>
+              </div>
+            </a>
+      
+            <a class="post-card" href="post-blog2.html">
+              <div class="post-thumb">
+                <img src="images/blog2.jpg" alt="תמונה למאמר 2">
+              </div>
+              <div class="post-body">
+                <h2 class="post-title">שני צדדים של אותו מטבע</h2>
+                <p class="post-excerpt">הדומה והשונה בין תכנון אסטרטגיה פיננסית למשפחות לבין תכנון עסקי</p>
+              </div>
+            </a>
+      
+      
+           <a class="post-card" href="post-blog3.html">
+  <div class="post-thumb">
+    <img src="images/פיננסים.jpg" alt="תמונה למאמר 3">
   </div>
+  <div class="post-body">
+    <h2 class="post-title">השקעות נדל״ן בחו״ל</h2>
+    <p class="post-excerpt">אמרו לכם 6% תשואה? כך תדעו כמה באמת נשאר בכיס</p>
+  </div>
+</a>
+      
+          </div>
+        </div>
+      
+        <button class="blog-arrow blog-arrow-next" id="blogNext" aria-label="המאמר הבא">
+          &#10095;
+        </button>
+      </section>
+      
+
+    </div>
   </section>
 </main>
 
